@@ -1,0 +1,102 @@
+[
+    {
+        "intent": "Let devices in the marketing department know that new application features is available.",
+        "category": "transfer",
+        "action": "push",
+        "requirement": "new application features",
+        "targets": "devices in the marketing department",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Pull policy enforcement scripts from the central media server",
+        "category": "transfer",
+        "action": "pull",
+        "requirement": null,
+        "targets": "central media server",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "streaming services must have priority in the network, supply it with download speed greater than 100mbps streaming services should be given preference.",
+        "category": "regulate",
+        "action": "prioritize",
+        "requirement": "download speed greater than 100mbps",
+        "targets": "streaming services",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "duration of active sessions associated with mobile phones in the student network needs to be tracked.",
+        "category": "regulate",
+        "action": "monitor",
+        "requirement": null,
+        "targets": "mobile phones in the student network",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Identifique todos os roteadores com compatibilidade para o protocolo VPN",
+        "category": "construct",
+        "action": "discover",
+        "requirement": "protocolo VPN",
+        "targets": "todos os roteadores",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Background synchronization should be limited for devices in the conference room network.",
+        "category": "regulate",
+        "action": "limit",
+        "requirement": "background synchronization",
+        "targets": "devices in the conference room network",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Identify all switches supporting real-time streaming capabilities",
+        "category": "construct",
+        "action": "discover",
+        "requirement": "real-time streaming capabilities",
+        "targets": "all switches",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Forward system performance updates to mobile devices in the logistics team",
+        "category": "transfer",
+        "action": "push",
+        "requirement": "system performance updates",
+        "targets": "mobile devices in the logistics team",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Ensure that research lab computers have higher network priority by providing upload speed greater than 10mbps.",
+        "category": "regulate",
+        "action": "prioritize",
+        "requirement": null,
+        "targets": "research lab computers",
+        "magnitude": "upload speed greater than 10mbps",
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Push custom monitoring tools to workstations in the design team.",
+        "category": "transfer",
+        "action": "push",
+        "requirement": null,
+        "targets": "workstations in the design team",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    }
+]

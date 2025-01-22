@@ -22,7 +22,7 @@ Para isso, será necessário: baixar o Ollama para o gerenciamento dos LLMs; bai
 
 Baixe o [Ollama](https://ollama.com/download) e siga os passos para a instalação.
 
-Após isso, acesse o HuggingFace [https://huggingface.co/] e navegue para "Models". Nesta página, pesquise pelo modelo desejado e selecione-o.
+Após isso, acesse o [HuggingFace](https://huggingface.co/) e navegue para "Models". Nesta página, pesquise pelo modelo desejado e selecione-o.
 
 Na página do modelo, procure por "Quantizations" e selecione uma versão adequada e que possibilite a instalação do arquivo GGUF, geralmente o
 nome do arquivo também está a quantização que foi feita, como mostrado na figura abaixo, a qual mostra alguns arquivos GGUF, como os que deverão
@@ -30,6 +30,10 @@ ser baixados para a compilação do modelo.
 
 ![image](https://github.com/user-attachments/assets/919bbf9c-d609-408c-98af-bd0fc8c5a89b)
 
+## Compilando o modelo
+
+> [!CAUTION]
+> Ainda incompleto e potencialmente incorreto!
 
 Na linha de comando:
 
@@ -38,6 +42,11 @@ Na linha de comando:
     ollama create <nome_do_novo_modelo> --file prompt.modelfile
   
 Mude para a pasta do código e rode na linha de comando: pip install -r requirements.txt
+
+## Realizando a avaliação
+
+>[!CAUTION]
+> Está incompleto e potencialmente incorreto!
 
 No código:
 

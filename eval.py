@@ -5,6 +5,7 @@ import pandas as pd
 import json
 from sklearn.metrics import accuracy_score
 from fuzzywuzzy import fuzz
+from new_eval import newReq
 import os
 
 def save_test_shuffled(test_set):
@@ -209,18 +210,13 @@ def get_test_set(test_path):
 
 
 
-
-
-
-    
-
 def evaluation_llms(test_file_path, test_size, modelName, quantized = None):
     test_set = get_test_set(test_file_path)
     intents = pd.DataFrame(test_set['intent'])
     save_test_shuffled(test_set)
     new_test_set = test_set.copy()
     # Para podermos verificar como o modelo se comporta conforme aumentamos os
-    output, new_test_set = req(intents.head(test_size), new_test_set.head(test_size), modelName)
+    output, new_test_set = newReq(intents.head(test_size), modelName)
     
     # Calcula as acurácias
     metrics_label = metrics_per_label(new_test_set, output)

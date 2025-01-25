@@ -38,11 +38,9 @@ def newReq(input_df, model):
 
     return output_df
 
-def createConfusionMatrixCategories(input_df, output_df):
-    y_true = input_df['category'].fillna("error")
-    y_pred = output_df['category'].fillna("error")
-
-    classes = ["construct", "transfer", "regulate", "error"]
+def createConfusionMatrixCategories(input_df, output_df, label, classes):
+    y_true = input_df[label].fillna("error")
+    y_pred = output_df[label].fillna("error")
 
     cm = confusion_matrix(y_true, y_pred, labels=classes)
 
@@ -82,3 +80,19 @@ def calcularMetricas(cm, classes):
     
     return metricas
 
+def getPositivesNegatives(test_df, output_df, label, classes):
+    output = output_df[label]
+    correct = test_df[label]
+
+    true_positives = [0]*len(classes)
+    false_positives = [0]*len(classes)
+    false_negatives = [0]*len(classes)
+
+    for (idx1, row1), (idx2, row2) in zip(correct.iterrows(), output.iterrows()):
+        if row1[label] == row2[label]:
+            true_positives[classes.index(row2[label])] += 1
+        if row2[label] != "error" and row1[label] != row2[label]:
+            false_positives[classes.index(row2[label])] += 1
+            false_negatives[classes.index(row1[label])] += 1
+
+    return true_positives, false_positives, false_negatives

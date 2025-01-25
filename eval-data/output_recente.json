@@ -1,100 +1,102 @@
 [
     {
-        "intent": "Let devices in the marketing department know that new application features is available.",
+        "intent": "Bandwidth consumption per device for public devices in the library must be tracked.",
+        "category": "construct",
+        "action": "discover",
+        "requirement": null,
+        "targets": "public devices in the library",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Advertise the presence of system performance updates to devices in the quality assurance lab.",
+        "category": "construct",
+        "action": "advertise",
+        "requirement": "system performance updates",
+        "targets": "devices in the quality assurance lab",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Personal laptops in the faculty network should have its real-time data throughput per device monitored.",
+        "category": "construct",
+        "action": "discover",
+        "requirement": "real-time data throughput per device",
+        "targets": "personal laptops in the faculty network",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "For devices actively using the library internet service, deny sites used for torrent downloads.",
+        "category": "regulate",
+        "action": "block",
+        "requirement": "sites used for torrent downloads",
+        "targets": "devices actively using the library internet service",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Ensure configuration files is sent to devices in the quality assurance lab.",
         "category": "transfer",
         "action": "push",
-        "requirement": "new application features",
+        "requirement": "configuration files",
+        "targets": [
+            "devices in the quality assurance lab"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Announce the availability of system performance updates on the devices in the marketing department.",
+        "category": "transfer",
+        "action": "advertise",
+        "requirement": "system performance updates",
         "targets": "devices in the marketing department",
         "magnitude": null,
         "start_time": "now",
         "end_time": null
     },
     {
-        "intent": "Pull policy enforcement scripts from the central media server",
-        "category": "transfer",
-        "action": "pull",
-        "requirement": null,
-        "targets": "central media server",
-        "magnitude": null,
-        "start_time": "now",
-        "end_time": null
-    },
-    {
-        "intent": "streaming services must have priority in the network, supply it with download speed greater than 100mbps streaming services should be given preference.",
-        "category": "regulate",
-        "action": "prioritize",
-        "requirement": "download speed greater than 100mbps",
-        "targets": "streaming services",
-        "magnitude": null,
-        "start_time": "now",
-        "end_time": null
-    },
-    {
-        "intent": "duration of active sessions associated with mobile phones in the student network needs to be tracked.",
-        "category": "regulate",
-        "action": "monitor",
-        "requirement": null,
-        "targets": "mobile phones in the student network",
-        "magnitude": null,
-        "start_time": "now",
-        "end_time": null
-    },
-    {
-        "intent": "Identifique todos os roteadores com compatibilidade para o protocolo VPN",
-        "category": "construct",
-        "action": "discover",
-        "requirement": "protocolo VPN",
-        "targets": "todos os roteadores",
-        "magnitude": null,
-        "start_time": "now",
-        "end_time": null
-    },
-    {
-        "intent": "Background synchronization should be limited for devices in the conference room network.",
-        "category": "regulate",
-        "action": "limit",
-        "requirement": "background synchronization",
-        "targets": "devices in the conference room network",
-        "magnitude": null,
-        "start_time": "now",
-        "end_time": null
-    },
-    {
-        "intent": "Identify all switches supporting real-time streaming capabilities",
-        "category": "construct",
-        "action": "discover",
-        "requirement": "real-time streaming capabilities",
-        "targets": "all switches",
-        "magnitude": null,
-        "start_time": "now",
-        "end_time": null
-    },
-    {
-        "intent": "Forward system performance updates to mobile devices in the logistics team",
+        "intent": "Deliver critical firmware updates for workstations in the design team.",
         "category": "transfer",
         "action": "push",
-        "requirement": "system performance updates",
-        "targets": "mobile devices in the logistics team",
-        "magnitude": null,
-        "start_time": "now",
-        "end_time": null
-    },
-    {
-        "intent": "Ensure that research lab computers have higher network priority by providing upload speed greater than 10mbps.",
-        "category": "regulate",
-        "action": "prioritize",
-        "requirement": null,
-        "targets": "research lab computers",
-        "magnitude": "upload speed greater than 10mbps",
-        "start_time": "now",
-        "end_time": null
-    },
-    {
-        "intent": "Push custom monitoring tools to workstations in the design team.",
-        "category": "transfer",
-        "action": "push",
-        "requirement": null,
+        "requirement": "critical firmware updates",
         "targets": "workstations in the design team",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "guest Wi-Fi network must have priority in the network, supply it with jitter lower than 20ms",
+        "category": "regulate",
+        "action": "prioritize",
+        "requirement": null,
+        "targets": "guest Wi-Fi network",
+        "magnitude": "jitter lower than 20ms",
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Let secure peer-to-peer file sharing service critical firmware updates be known by devices in the marketing department.",
+        "category": "transfer",
+        "action": "push",
+        "requirement": "critical firmware updates",
+        "targets": "devices in the marketing department",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Detect guest network devices that are compatible with HTTP/2 protocol.",
+        "category": "construct",
+        "action": "discover",
+        "requirement": "HTTP/2 protocol",
+        "targets": "guest network devices",
         "magnitude": null,
         "start_time": "now",
         "end_time": null

@@ -5,7 +5,7 @@ import pandas as pd
 import json
 from sklearn.metrics import accuracy_score
 from fuzzywuzzy import fuzz
-from new_eval import newReq
+from new_eval import *
 import os
 
 def save_test_shuffled(test_set):
@@ -216,17 +216,19 @@ def evaluation_llms(test_file_path, test_size, modelName, quantized = None):
     save_test_shuffled(test_set)
     new_test_set = test_set.copy()
     # Para podermos verificar como o modelo se comporta conforme aumentamos os
-    output, new_test_set = newReq(intents.head(test_size), modelName)
+    output = newReq(intents.head(test_size), modelName)
     
     # Calcula as acurácias
-    metrics_label = metrics_per_label(new_test_set, output)
-    metrics_cat = metrics_by_category(new_test_set, output)
+    # metrics_label = metrics_per_label(new_test_set, output)
+    # metrics_cat = metrics_by_category(new_test_set, output)
+    cm = createConfusionMatrixCategories(test_set, output, 'category', ["construct", "transfer", "regulate", "error"])
+    metrics = calcularMetricas(cm, ["construct", "transfer", "regulate", "error"])
     # Avaliar com fuzzy
     # Categoria e action bater 100%, logo são removido da aproximação com fuzzy
     test_fuzzy = new_test_set.drop(columns=['category', 'action'])
     out_fuzzy = output.drop(columns=['category', 'action'])
     metrics_label_fuzzy = metrics_per_label_with_fuzzy(test_fuzzy, out_fuzzy)
-    if (quantized): save_results(f"./results/{modelName}-{quantized}b/accuracy.txt", test_size, metrics_label, metrics_cat, metrics_label_fuzzy)
-    else: save_results(f"./results/{modelName}/accuracy.txt", test_size, metrics_label, metrics_cat, metrics_label_fuzzy)
 
+    with open(f"./results/metrics_{modelName}", "w") as f:
+        json.dump(metrics, f)
 

@@ -1,8 +1,1000 @@
 [
     {
-        "intent": "configuration files has to be retrieved from central media server.",
+        "intent": "Retrieve custom monitoring tools from the workstations in the design team",
+        "category": "construct",
+        "action": "discover",
+        "requirement": null,
+        "targets": [
+            "workstations in the design team"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Ensure tracking of upload and download speeds per device for devices connected to the dormitory network",
+        "category": "regulate",
+        "action": "limit",
+        "requirement": null,
+        "targets": "devices connected to the dormitory network",
+        "magnitude": "upload/download speed per device",
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Ensure that guest WiFi network have higher network priority by providing download speed greater than 100mbps",
+        "category": "regulate",
+        "action": "prioritize",
+        "requirement": null,
+        "targets": "guest WiFi network",
+        "magnitude": "download speed > 100mbps",
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "List LAN endpoints configured for VPN compatibility",
+        "category": "construct",
+        "action": "discover",
+        "requirement": null,
+        "targets": "LAN endpoints",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Pinpoint LAN endpoints with compatibility for dual-band WiFi",
+        "category": "construct",
+        "action": "discover",
+        "requirement": null,
+        "targets": "LAN endpoints",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Let compatible devices know that policy enforcement scripts is available",
+        "category": "transfer",
+        "action": "push",
+        "requirement": "policy enforcement scripts",
+        "targets": null,
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Cap the minimum bandwidth to 80 mbps for streaming services",
+        "category": "regulate",
+        "action": "limit",
+        "requirement": "bandwidth for streaming services",
+        "targets": null,
+        "magnitude": "80mbps",
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Realtime data throughput per device associated with devices connected to the dormitory network needs to be tracked",
+        "category": "construct",
+        "action": "discover",
+        "requirement": null,
+        "targets": [
+            "devices connected to the dormitory network"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Detect IoT devices that are compatible with IPv6 protocol",
+        "category": "construct",
+        "action": "discover",
+        "requirement": "compat\u00edvel com o protocolo IPv6",
+        "targets": [
+            "IoT devices"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Custom monitoring tools must be delivered to workstations in the design team",
+        "category": "transfer",
+        "action": "push",
+        "requirement": null,
+        "targets": "workstations in the design team",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Let mobile devices in the logistics team know that custom monitoring tools is available.",
+        "category": "transfer",
+        "action": "advertise",
+        "requirement": "custom monitoring tools",
+        "targets": "mobile devices in the logistics team",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "notify devices in the quality assurance lab that a secure peer-to-peer file sharing service critical firmware updates is ready",
+        "category": "transfer",
+        "action": "push",
+        "requirement": "critical firmware updates",
+        "targets": [
+            "devices in the quality assurance lab"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "all routers supporting WiFi 6 capability need to be identified",
+        "category": "construct",
+        "action": "discover",
+        "requirement": null,
+        "targets": "routers que suportam a capacidade WiFi 6",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Push antivirus definition updates to all servers in the data center",
+        "category": "transfer",
+        "action": "push",
+        "requirement": "atualiza\u00e7\u00f5es de defini\u00e7\u00f5es de antiv\u00edrus",
+        "targets": [
+            "todos os servidores no data center"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "advertise the presence of new application features to all laptops used by remote workers",
+        "category": "construct",
+        "action": "advertise",
+        "requirement": "new application features",
+        "targets": "all laptops used by remote workers",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "configuration files must be delivered to devices in the marketing department",
+        "category": "transfer",
+        "action": "push",
+        "requirement": null,
+        "targets": "devices in the marketing department",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Duration of active sessions associated with mobile phones in the student network needs to be tracked",
+        "category": "construct",
+        "action": "discover",
+        "requirement": null,
+        "targets": "mobile phones in the student network",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Ensure that IoT device operations have higher network priority by providing jitter lower than 20ms",
+        "category": "regulate",
+        "action": "prioritize",
+        "requirement": null,
+        "targets": "IoT devices",
+        "magnitude": "jitter lower than 20ms",
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "List LAN endpoints configured for WiFi 6 capability",
+        "category": "construct",
+        "action": "discover",
+        "requirement": "WiFi 6",
+        "targets": [
+            "LAN endpoints"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Cap the download speed to 80 mbps for guest WiFi network",
+        "category": "regulate",
+        "action": "limit",
+        "requirement": "download speed",
+        "targets": "guest WiFi network",
+        "magnitude": "80mbps",
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "",
+        "category": "error",
+        "action": "",
+        "requirement": "",
+        "targets": "",
+        "magnitude": "",
+        "start_time": "",
+        "end_time": ""
+    },
+    {
+        "intent": "Sites used for torrent downloads should be denied for systems linked to the administrative LAN",
+        "category": "regulate",
+        "action": "block",
+        "requirement": null,
+        "targets": "systems linked to the administrative LAN",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Throttle download and upload speed to a maximum of 30 mbps for devices connected to the dormitory network",
+        "category": "regulate",
+        "action": "limit",
+        "requirement": "download and upload speed to 30mbps",
+        "targets": "devices connected to the dormitory network",
+        "magnitude": "30mbps",
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Assign top priority for printers and scanners connected to the network",
+        "category": "regulate",
+        "action": "prioritize",
+        "requirement": null,
+        "targets": "printers and scanners connected to the network",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Identify all switches supporting IPv6 protocol",
+        "category": "construct",
+        "action": "discover",
+        "requirement": "protocolo IPv6",
+        "targets": "todos os switches",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Notify IoT devices in the room that a bug fixes for existing software is ready",
+        "category": "construct",
+        "action": "advertise",
+        "requirement": "bug fixes for existing software",
+        "targets": "IoT devices in the room",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "workstations in the design team has the latest software updates request it",
+        "category": "transfer",
+        "action": "push",
+        "requirement": "latest software updates",
+        "targets": "workstations in the design team",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "",
+        "category": "error",
+        "action": "",
+        "requirement": "",
+        "targets": "",
+        "magnitude": "",
+        "start_time": "",
+        "end_time": ""
+    },
+    {
+        "intent": "Prevent devices actively using the library internet service from accessing sites used for torrent downloads",
+        "category": "regulate",
+        "action": "block",
+        "requirement": "sites used for torrent downloads",
+        "targets": "devices actively using the library internet service",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Ensure that devices connected to the dormitory network have higher network priority by providing download speed greater than 100mbps",
+        "category": "regulate",
+        "action": "prioritize",
+        "requirement": null,
+        "targets": "devices connected to the dormitory network",
+        "magnitude": "download speed > 100mbps",
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Ensure tracking of data transfer volumes for guest WiFi network",
+        "category": "construct",
+        "action": "discover",
+        "requirement": null,
+        "targets": "guest WiFi network",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Bug fixes for existing software is to be pushed to all servers in the data center",
+        "category": "transfer",
+        "action": "push",
+        "requirement": "bug fixes",
+        "targets": [
+            "all servers in the data center"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "",
+        "category": "error",
+        "action": "",
+        "requirement": "",
+        "targets": "",
+        "magnitude": "",
+        "start_time": "",
+        "end_time": ""
+    },
+    {
+        "intent": "Pull updated antivirus definitions from the IoT devices",
         "category": "transfer",
         "action": "pull",
+        "requirement": "updated antivirus definitions",
+        "targets": [
+            "IoT devices"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "devices connected to the dormitory network must have priority in the network supply it with jitter lower than 20ms devices connected to the dormitory network should be given preference",
+        "category": "regulate",
+        "action": "prioritize",
+        "requirement": null,
+        "targets": [
+            "devices connected to the dormitory network"
+        ],
+        "magnitude": "jitter lower than 20ms",
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "advertise the presence of system performance updates to all laptops used by remote workers",
+        "category": "construct",
+        "action": "advertise",
+        "requirement": null,
+        "targets": "all laptops used by remote workers",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Pull latest software updates from the cloud",
+        "category": "transfer",
+        "action": "pull",
+        "requirement": "latest software updates",
+        "targets": null,
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Let new application features be known by devices in the quality assurance lab",
+        "category": "transfer",
+        "action": "advertise",
+        "requirement": null,
+        "targets": "devices in the quality assurance lab",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Identify all routers that support real-time streaming capabilities",
+        "category": "construct",
+        "action": "discover",
+        "requirement": "capacidades de streaming em tempo real",
+        "targets": [
+            "todos os roteadores"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Pull security patches from the IoT devices",
+        "category": "transfer",
+        "action": "pull",
+        "requirement": null,
+        "targets": "IoT devices",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Request the security patches from cloud",
+        "category": "transfer",
+        "action": "pull",
+        "requirement": "security patches",
+        "targets": null,
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Traffic volume associated with guest WiFi network needs to be tracked",
+        "category": "construct",
+        "action": "discover",
+        "requirement": null,
+        "targets": "guest WiFi network traffic",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Printers and scanners connected to the network must be limited to 80 mbps",
+        "category": "regulate",
+        "action": "limit",
+        "requirement": null,
+        "targets": [
+            "printers",
+            "scanners"
+        ],
+        "magnitude": "80mbps",
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Identify smart home devices supporting active SSH service",
+        "category": "construct",
+        "action": "discover",
+        "requirement": null,
+        "targets": "smart home devices",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Ensure that printers and scanners connected to the network have higher network priority by providing jitter lower than 20ms",
+        "category": "regulate",
+        "action": "prioritize",
+        "requirement": null,
+        "targets": "printers and scanners connected to the network",
+        "magnitude": "jitter lower than 20ms",
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "",
+        "category": "error",
+        "action": "",
+        "requirement": "",
+        "targets": "",
+        "magnitude": "",
+        "start_time": "",
+        "end_time": ""
+    },
+    {
+        "intent": "for devices connected via the staffonly network deny websites containing explicit content",
+        "category": "regulate",
+        "action": "block",
+        "requirement": "websites containing explicit content",
+        "targets": "devices connected via the staffonly network",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Identify mobile devices supporting VPN compatibility",
+        "category": "construct",
+        "action": "discover",
+        "requirement": "compatibilidade com VPN",
+        "targets": null,
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Ensure critical firmware updates is sent to all laptops used by remote workers",
+        "category": "transfer",
+        "action": "push",
+        "requirement": "critical firmware updates",
+        "targets": [
+            "all laptops used by remote workers"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Push policy enforcement scripts to IoT devices in the smart factory",
+        "category": "transfer",
+        "action": "push",
+        "requirement": "policy enforcement scripts",
+        "targets": [
+            "IoT devices"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Broadcast the readiness of secure peer-to-peer file sharing service critical firmware updates for mobile devices in the logistics team",
+        "category": "construct",
+        "action": "advertise",
+        "requirement": null,
+        "targets": [
+            "mobile devices in the logistics team"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "",
+        "category": "error",
+        "action": "",
+        "requirement": "",
+        "targets": "",
+        "magnitude": "",
+        "start_time": "",
+        "end_time": ""
+    },
+    {
+        "intent": "notify compatible devices that a custom monitoring tool is ready",
+        "category": "transfer",
+        "action": "advertise",
+        "requirement": null,
+        "targets": "compatible devices",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "pull new application features from the compatible devices",
+        "category": "transfer",
+        "action": "pull",
+        "requirement": null,
+        "targets": "compatible devices",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "lan endpoints supporting wifi 6 capability need to be identified",
+        "category": "construct",
+        "action": "discover",
+        "requirement": null,
+        "targets": [
+            "lan endpoints"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "for computers operating within the dormitory wifi deny community forums and discussion boards",
+        "category": "regulate",
+        "action": "block",
+        "requirement": "community forums and discussion boards",
+        "targets": "computers operating within the dormitory wifi",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Ensure websites containing explicit content is not accessible for visitors accessing the conference room network",
+        "category": "regulate",
+        "action": "block",
+        "requirement": "websites containing explicit content",
+        "targets": "visitors accessing the conference room network",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Ensure connections to online gaming environments is not accessible for IoT devices integrated into the campus network",
+        "category": "regulate",
+        "action": "block",
+        "requirement": "online gaming environments",
+        "targets": "IoT devices integrated into the campus network",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Let compatible devices know that secure peer-to-peer file sharing service critical firmware updates is available",
+        "category": "transfer",
+        "action": "push",
+        "requirement": "firmware updates",
+        "targets": [
+            "compatible devices"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Ensure bug fixes for existing software is sent to devices in the marketing department",
+        "category": "transfer",
+        "action": "push",
+        "requirement": "bug fixes for existing software",
+        "targets": "devices in the marketing department",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Make video conferencing traffic a priority",
+        "category": "regulate",
+        "action": "prioritize",
+        "requirement": null,
+        "targets": null,
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Assign top priority for research lab computers.",
+        "category": "regulate",
+        "action": "prioritize",
+        "requirement": null,
+        "targets": "research lab computers",
+        "magnitude": "latency lower than 10ms",
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Let compatible devices know that configuration files are available",
+        "category": "transfer",
+        "action": "advertise",
+        "requirement": "configuration files",
+        "targets": "compatible devices",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Throttle upload speed to a maximum of 80 mbps for printers and scanners connected to the network",
+        "category": "regulate",
+        "action": "limit",
+        "requirement": null,
+        "targets": "printers and scanners connected to the network",
+        "magnitude": "80mbps",
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "advertise the presence of configuration files to devices in the quality assurance lab",
+        "category": "construct",
+        "action": "advertise",
+        "requirement": "configuration files",
+        "targets": [
+            "devices in the quality assurance lab"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Push updated antivirus definitions that have been retrieved from IoT devices",
+        "category": "transfer",
+        "action": "push",
+        "requirement": null,
+        "targets": [
+            "IoT devices"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Upload speed should be limited for research lab computers",
+        "category": "regulate",
+        "action": "limit",
+        "requirement": null,
+        "targets": "research lab computers",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Ensure security patches is sent to all servers in the data center",
+        "category": "transfer",
+        "action": "push",
+        "requirement": "security patches",
+        "targets": [
+            "todos os servidores no data center"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Monitor packet loss rates for IoT devices across the campus",
+        "category": "construct",
+        "action": "discover",
+        "requirement": null,
+        "targets": [
+            "IoT devices across the campus"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Detect IoT devices that are compatible with firewall configuration",
+        "category": "construct",
+        "action": "discover",
+        "requirement": null,
+        "targets": "IoT devices",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Prevent systems linked to the administrative LAN from accessing VPNs or proxy tools",
+        "category": "regulate",
+        "action": "block",
+        "requirement": null,
+        "targets": "systems linked to the administrative LAN",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Pinpoint all switches with compatibility for WiFi 6 capability",
+        "category": "construct",
+        "action": "discover",
+        "requirement": "compatibility with WiFi 6",
+        "targets": [
+            "switches"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Printers and scanners connected to the network must be limited to 50mbps per device",
+        "category": "regulate",
+        "action": "limit",
+        "requirement": "bandwidth",
+        "targets": "printers and scanners connected to the network",
+        "magnitude": "50mbps per device",
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "For IoT devices integrated into the campus network, access to VPNs or proxy tools must be denied",
+        "category": "regulate",
+        "action": "block",
+        "requirement": null,
+        "targets": "IoT devices integrated into the campus network",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Broadcast the readiness of system performance updates for mobile devices in the logistics team.",
+        "category": "construct",
+        "action": "advertise",
+        "requirement": "system performance updates",
+        "targets": [
+            "mobile devices in the logistics team"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Ensure that streaming services have higher network priority by providing upload speed greater than 10mbps",
+        "category": "regulate",
+        "action": "prioritize",
+        "requirement": null,
+        "targets": "streaming services",
+        "magnitude": "upload speed greater than 10mbps",
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Request the custom monitoring tools from local network department",
+        "category": "transfer",
+        "action": "pull",
+        "requirement": null,
+        "targets": [
+            "local network department"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Apply maximum bandwidth limit of 80mbps to research lab computers",
+        "category": "regulate",
+        "action": "limit",
+        "requirement": "bandwidth",
+        "targets": "research lab computers",
+        "magnitude": "80mbps",
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Ensure that printers and scanners connected to the network have higher network priority by providing download speed greater than 100mbps",
+        "category": "regulate",
+        "action": "prioritize",
+        "requirement": null,
+        "targets": "printers and scanners connected to the network",
+        "magnitude": ">100mbps",
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Platforms hosting video streaming services should be denied for systems linked to the administrative LAN",
+        "category": "regulate",
+        "action": "block",
+        "requirement": null,
+        "targets": "systems linked to the administrative LAN",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Let updated antivirus definitions be known by devices in the marketing department",
+        "category": "transfer",
+        "action": "push",
+        "requirement": null,
+        "targets": "devices in the marketing department",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Let devices in the marketing department know that new application features is available",
+        "category": "transfer",
+        "action": "push",
+        "requirement": "new application features",
+        "targets": "devices in the marketing department",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Upload and download speeds per device associated with mobile phones in the student network needs to be tracked",
+        "category": "regulate",
+        "action": "monitor",
+        "requirement": null,
+        "targets": "mobile phones in the student network",
+        "magnitude": "upload and download speeds per device",
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "realtime data throughput per device associated with research lab computers needs to be tracked",
+        "category": "regulate",
+        "action": "track",
+        "requirement": null,
+        "targets": "research lab computers",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Monitor duration of active sessions for printers and scanners connected to the network",
+        "category": "regulate",
+        "action": "discover",
+        "requirement": null,
+        "targets": [
+            "printers",
+            "scanners"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Data transfer volumes associated with devices connected to the dormitory network needs to be tracked",
+        "category": "transfer",
+        "action": "pull",
+        "requirement": null,
+        "targets": "devices connected to the dormitory network",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Ensure that IoT device operations have higher network priority by providing latency lower than 10ms",
+        "category": "regulate",
+        "action": "prioritize",
+        "requirement": "latency lower than 10ms",
+        "targets": "IoT devices",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Broadcast the readiness of system performance updates for IoT devices in the room, which must be fetched from the central media server",
+        "category": "construct",
+        "action": "advertise",
+        "requirement": null,
+        "targets": "IoT devices in the room",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Updated antivirus definitions must be delivered to workstations in the design team",
+        "category": "transfer",
+        "action": "push",
+        "requirement": "atualiza\u00e7\u00f5es de defini\u00e7\u00f5es de antiv\u00edrus",
+        "targets": [
+            "workstations in the design team"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "for public devices on the common area networks access to messaging and chat services must be denied",
+        "category": "regulate",
+        "action": "block",
+        "requirement": "access to messaging and chat services",
+        "targets": "public devices on the common area networks",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "for enduser devices in the campus guest network access to connections to online gaming environments must be denied",
+        "category": "regulate",
+        "action": "block",
+        "requirement": null,
+        "targets": "enduser devices in the campus guest network",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Dualband WiFi is supported by which of LAN endpoints",
+        "category": "construct",
+        "action": "discover",
+        "requirement": "dualband WiFi",
+        "targets": null,
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "advertise the presence of policy enforcement scripts to mobile devices in the logistics team",
+        "category": "construct",
+        "action": "advertise",
+        "requirement": null,
+        "targets": "mobile devices in the logistics team",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Data transfer volumes for IoT devices across the campus must be tracked",
+        "category": "construct",
+        "action": "discover",
+        "requirement": null,
+        "targets": "IoT devices across the campus",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Request the new application features from central media server",
+        "category": "construct",
+        "action": "discover",
         "requirement": null,
         "targets": "central media server",
         "magnitude": null,
@@ -10,7 +1002,579 @@
         "end_time": null
     },
     {
-        "intent": "Pull custom monitoring tools from the local network department.",
+        "intent": "Identify guest network devices that support dual-band Wi-Fi",
+        "category": "construct",
+        "action": "discover",
+        "requirement": "dual-band Wi-Fi",
+        "targets": "dispositivos de redes de convidados que suportam Wi-Fi dual-banda",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Retrieve system performance updates from the workstations in the design team",
+        "category": "transfer",
+        "action": "pull",
+        "requirement": null,
+        "targets": "workstations in the design team",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "advertise the presence of policy enforcement scripts to all laptops used by remote workers",
+        "category": "construct",
+        "action": "advertise",
+        "requirement": null,
+        "targets": "all laptops used by remote workers",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Laptops used by employees must be limited to 50mbps per device, upload speed should be limited to 50mbps per device for laptops used by employees",
+        "category": "regulate",
+        "action": "limit",
+        "requirement": null,
+        "targets": "laptops used by employees",
+        "magnitude": "50mbps per device",
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "VPNs or proxy tools should be denied for computers operating within the dormitory wifi",
+        "category": "regulate",
+        "action": "block",
+        "requirement": null,
+        "targets": "computers operating within the dormitory wifi",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Video conferencing traffic must have priority in the network, supply it with upload speed greater than 10mbps, video conferencing traffic should be given preference",
+        "category": "regulate",
+        "action": "prioritize",
+        "requirement": null,
+        "targets": "video conferencing traffic",
+        "magnitude": ">10mbps",
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "video conferencing traffic must be limited to 80 mbps, upload speed should be limited to 80 mbps for video conferencing traffic",
+        "category": "regulate",
+        "action": "limit",
+        "requirement": null,
+        "targets": "video conferencing traffic",
+        "magnitude": "80mbps",
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Identify LAN endpoints supporting WiFi 6 capability",
+        "category": "construct",
+        "action": "discover",
+        "requirement": null,
+        "targets": [
+            "LAN endpoints"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Latest software updates must be fetched from the workstations in the design team",
+        "category": "construct",
+        "action": "pull",
+        "requirement": "software updates",
+        "targets": [
+            "workstations in the design team"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Identify WiFi clients supporting real-time streaming capabilities",
+        "category": "construct",
+        "action": "discover",
+        "requirement": "capacidades de streaming em tempo real",
+        "targets": null,
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "For computers operating within the dormitory WiFi, deny VPNs or proxy tools",
+        "category": "regulate",
+        "action": "block",
+        "requirement": null,
+        "targets": "computers operating within the dormitory WiFi",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Secure peer-to-peer file sharing service critical firmware updates must be fetched from the cloud",
+        "category": "transfer",
+        "action": "push",
+        "requirement": "firmware updates",
+        "targets": [
+            "cloud"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Identify IoT devices supporting dual-band WiFi",
+        "category": "construct",
+        "action": "discover",
+        "requirement": null,
+        "targets": [
+            "IoT devices"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Pull configuration files from the local network department",
+        "category": "transfer",
+        "action": "pull",
+        "requirement": null,
+        "targets": [
+            "local network department"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Ensure tracking of data transfer volumes for research lab computers",
+        "category": "regulate",
+        "action": "discover",
+        "requirement": null,
+        "targets": "computers do laborat\u00f3rio de pesquisa",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "http2 protocol is supported by which of lan endpoints",
+        "category": "construct",
+        "action": "discover",
+        "requirement": null,
+        "targets": [
+            "all LAN endpoints"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Make sure maximum bandwidth is restricted for guest WiFi network",
+        "category": "regulate",
+        "action": "limit",
+        "requirement": "bandwidth",
+        "targets": "guest WiFi network",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Let system performance updates be known by mobile devices in the logistics team",
+        "category": "transfer",
+        "action": "push",
+        "requirement": "system performance updates",
+        "targets": [
+            "mobile devices in the logistics team"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "track duration of active sessions of guest wifi network",
+        "category": "regulate",
+        "action": "monitor",
+        "requirement": null,
+        "targets": "active sessions on the guest WiFi network",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "configuration files needs to be forwarded to devices in the marketing department",
+        "category": "transfer",
+        "action": "push",
+        "requirement": "configuration files",
+        "targets": [
+            "devices in the marketing department"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "IoT devices have the Secure Peer-to-Peer File Sharing Service critical firmware updates request it",
+        "category": "transfer",
+        "action": "push",
+        "requirement": "firmware updates",
+        "targets": [
+            "IoT devices"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "List guest network devices configured for IPv6 protocol",
+        "category": "construct",
+        "action": "discover",
+        "requirement": null,
+        "targets": [
+            "guest network devices"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Ensure messaging and chat services is not accessible for devices actively using the library internet service",
+        "category": "regulate",
+        "action": "block",
+        "requirement": null,
+        "targets": "devices actively using the library internet service",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "track packet loss rates of IoT devices across the campus",
+        "category": "regulate",
+        "action": "monitor",
+        "requirement": "packet loss rates",
+        "targets": [
+            "IoT devices"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Let new application features be known by IoT devices in the room",
+        "category": "transfer",
+        "action": "advertise",
+        "requirement": "new application features",
+        "targets": [
+            "IoT devices in the room"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Broadcast the readiness of system performance updates for IoT devices in the room, which needs to be retrieved from local network department",
+        "category": "construct",
+        "action": "advertise",
+        "requirement": null,
+        "targets": [
+            "IoT devices in the room"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Track upload and download speeds per device of public devices in the library",
+        "category": "regulate",
+        "action": "monitor",
+        "requirement": null,
+        "targets": "public devices in the library",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "public devices in the library should have its bandwidth consumption per device monitored",
+        "category": "regulate",
+        "action": "monitor",
+        "requirement": null,
+        "targets": "public devices in the library",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "for devices in the marketing department push custom monitoring tools",
+        "category": "transfer",
+        "action": "push",
+        "requirement": "custom monitoring tools",
+        "targets": [
+            "devices in the marketing department"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Notify mobile devices in the logistics team that a custom monitoring tools is ready",
+        "category": "transfer",
+        "action": "push",
+        "requirement": null,
+        "targets": [
+            "mobile devices in the logistics team"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Pinpoint LAN endpoints with compatibility for real-time streaming capabilities",
+        "category": "construct",
+        "action": "discover",
+        "requirement": "compatibilidade para streamings em tempo real",
+        "targets": [
+            "LAN endpoints"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Laptops used by employees must have priority in the network supply it with latency lower than 10ms, laptops used by employees should be given preference",
+        "category": "regulate",
+        "action": "prioritize",
+        "requirement": null,
+        "targets": "laptops used by employees",
+        "magnitude": "latency lower than 10ms",
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Give priority to guest WiFi network.",
+        "category": "regulate",
+        "action": "prioritize",
+        "requirement": null,
+        "targets": "guest WiFi network",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Cap the download speed to 50mbps per device for devices connected to the dormitory network",
+        "category": "regulate",
+        "action": "limit",
+        "requirement": "download speed",
+        "targets": "devices connected to the dormitory network",
+        "magnitude": "50mbps per device",
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Ensure that video conferencing traffic have higher network priority by providing upload speed greater than 10mbps",
+        "category": "regulate",
+        "action": "prioritize",
+        "requirement": null,
+        "targets": "video conferencing traffic",
+        "magnitude": "upload speed greater than 10mbps",
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Pull policy enforcement scripts from the central media server",
+        "category": "transfer",
+        "action": "pull",
+        "requirement": null,
+        "targets": "scripts on the central media server",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Throttle download speed to a maximum of 50mbps per device for devices connected to the dormitory network",
+        "category": "regulate",
+        "action": "limit",
+        "requirement": "download speed",
+        "targets": "devices connected to the dormitory network",
+        "magnitude": "50mbps per device",
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "For devices in the quality assurance lab, push security patches",
+        "category": "transfer",
+        "action": "push",
+        "requirement": "seguran\u00e7a de patches",
+        "targets": [
+            "devices in the quality assurance lab"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "IoT device operations must have priority in the network supply it with jitter lower than 20ms, IoT device operations should be given preference",
+        "category": "regulate",
+        "action": "prioritize",
+        "requirement": null,
+        "targets": "IoT devices",
+        "magnitude": "jitter lower than 20ms",
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "For public devices on the common area networks, access to VPNs or proxy tools must be denied",
+        "category": "regulate",
+        "action": "block",
+        "requirement": "VPNs or proxy tools",
+        "targets": "public devices on the common area networks",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Ensure that download and upload speed is limited to 50mbps per device for IoT device operations",
+        "category": "regulate",
+        "action": "limit",
+        "requirement": "download and upload speed of 50mbps per device",
+        "targets": "IoT devices",
+        "magnitude": "50mbps per device",
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "printers and scanners connected to the network must have priority in the network supply it with download speed greater than 100mbps",
+        "category": "regulate",
+        "action": "prioritize",
+        "requirement": "download speed greater than 100mbps",
+        "targets": "printers and scanners connected to the network",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Cap the minimum bandwidth to 30 mbps for IoT device operations",
+        "category": "regulate",
+        "action": "limit",
+        "requirement": "minimum bandwidth",
+        "targets": "IoT devices",
+        "magnitude": "30mbps",
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "policy enforcement scripts needs to be forwarded to IoT devices in the smart factory",
+        "category": "transfer",
+        "action": "push",
+        "requirement": null,
+        "targets": "IoT devices in the smart factory",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "",
+        "category": "error",
+        "action": "",
+        "requirement": "",
+        "targets": "",
+        "magnitude": "",
+        "start_time": "",
+        "end_time": ""
+    },
+    {
+        "intent": "Secure peer-to-peer file sharing service; critical firmware updates must be fetched from the IoT devices",
+        "category": "transfer",
+        "action": "pull",
+        "requirement": "firmware updates",
+        "targets": [
+            "IoT devices"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "track packet loss rates of personal laptops in the faculty network",
+        "category": "regulate",
+        "action": "monitor",
+        "requirement": null,
+        "targets": [
+            "personal laptops in the faculty network"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "policy enforcement scripts is to be pushed to devices in the quality assurance lab",
+        "category": "transfer",
+        "action": "push",
+        "requirement": "policy enforcement scripts",
+        "targets": [
+            "devices in the quality assurance lab"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "log number of failed connection attempts associated with devices in the conference room network",
+        "category": "regulate",
+        "action": "collect",
+        "requirement": null,
+        "targets": "devices in the conference room network",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Background synchronization should be limited for devices in the conference room network",
+        "category": "regulate",
+        "action": "limit",
+        "requirement": "background synchronization",
+        "targets": "devices in the conference room network",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "List smart home devices configured for active SSH service",
+        "category": "construct",
+        "action": "discover",
+        "requirement": null,
+        "targets": [
+            "smart home devices"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Detect IoT devices that are compatible with HTTP/2 protocol",
+        "category": "construct",
+        "action": "discover",
+        "requirement": null,
+        "targets": null,
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "IoT device operations must be limited to 30 Mbps, minimum bandwidth should be limited to 30 Mbps for IoT device operations",
+        "category": "regulate",
+        "action": "limit",
+        "requirement": null,
+        "targets": "IoT device operations",
+        "magnitude": "30 Mbps",
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Pull custom monitoring tools from the local network department",
         "category": "transfer",
         "action": "pull",
         "requirement": null,
@@ -20,27 +1584,104 @@
         "end_time": null
     },
     {
-        "intent": "For IoT devices integrated into the campus network, access to platforms hosting video streaming services must be denied.",
+        "intent": "Ensure VPNs or proxy tools is not accessible for devices actively using the library internet service",
         "category": "regulate",
         "action": "block",
-        "requirement": "video streaming services",
-        "targets": "IoT devices integrated into the campus network",
+        "requirement": null,
+        "targets": "devices actively using the library internet service",
         "magnitude": null,
         "start_time": "now",
         "end_time": null
     },
     {
-        "intent": "error",
-        "category": "",
-        "action": "",
-        "requirement": "",
-        "targets": "",
-        "magnitude": "",
-        "start_time": "",
-        "end_time": ""
+        "intent": "Retrieve configuration files from the cloud",
+        "category": "transfer",
+        "action": "pull",
+        "requirement": null,
+        "targets": [
+            null,
+            null
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
     },
     {
-        "intent": "Keep a record of real-time data throughput per device related to personal laptops in the faculty network.",
+        "intent": "Push policy enforcement scripts to all servers in the data center",
+        "category": "transfer",
+        "action": "push",
+        "requirement": "policy enforcement scripts",
+        "targets": "all servers in the data center",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Ensure that devices in the conference room network have higher network priority by providing latency lower than 10ms",
+        "category": "regulate",
+        "action": "prioritize",
+        "requirement": "latency lower than 10ms",
+        "targets": "devices in the conference room network",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Keep a record of bandwidth consumption per device related to devices in the conference room network",
+        "category": "construct",
+        "action": "discover",
+        "requirement": null,
+        "targets": "devices in the conference room network",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "IoT devices have the updated antivirus definitions, request it",
+        "category": "transfer",
+        "action": "push",
+        "requirement": "atualiza\u00e7\u00f5es de defini\u00e7\u00f5es de antiv\u00edrus",
+        "targets": [
+            "todos os dispositivos IoT"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "monitor bandwidth consumption per device for mobile phones in the student network",
+        "category": "construct",
+        "action": "discover",
+        "requirement": null,
+        "targets": "mobile phones in the student network",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "For devices in the quality assurance lab, push bug fixes for existing software",
+        "category": "transfer",
+        "action": "push",
+        "requirement": "bug fixes for existing software",
+        "targets": [
+            "devices in the quality assurance lab"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Announce the availability of system performance updates on the devices in the marketing department",
+        "category": "transfer",
+        "action": "advertise",
+        "requirement": "system performance updates",
+        "targets": "devices in the marketing department",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "keep a record of real-time data throughput per device related to personal laptops in the faculty network",
         "category": "construct",
         "action": "discover",
         "requirement": null,
@@ -50,69 +1691,123 @@
         "end_time": null
     },
     {
-        "intent": "Identifique dispositivos m\u00f3veis que suportam compatibilidade com VPN",
-        "category": "construct",
-        "action": "discover",
-        "requirement": null,
-        "targets": null,
-        "magnitude": null,
-        "start_time": "now",
-        "end_time": null
-    },
-    {
-        "intent": "Notify devices in the quality assurance lab that a secure peer-to-peer file sharing service critical firmware updates is ready.",
-        "category": "transfer",
-        "action": "push",
-        "requirement": "secure peer-to-peer file sharing service and critical firmware updates",
-        "targets": "devices in the quality assurance lab",
-        "magnitude": null,
-        "start_time": "now",
-        "end_time": null
-    },
-    {
-        "intent": "Real-time data throughput per device associated with research lab computers needs to be tracked.",
-        "category": "regulate",
-        "action": "monitor",
-        "requirement": "data throughput per device",
-        "targets": "research lab computers",
-        "magnitude": null,
-        "start_time": "now",
-        "end_time": null
-    },
-    {
-        "intent": "Streaming services must have priority in the network, supply it with download speed greater than 100mbps streaming services should be given preference.",
-        "category": "regulate",
-        "action": "prioritize",
-        "requirement": null,
-        "targets": "streaming services",
-        "magnitude": "download speed greater than 100mbps",
-        "start_time": "now",
-        "end_time": null
-    },
-    {
-        "intent": "For devices connected via the staff-only network, access to community forums and discussion boards must be denied.",
+        "intent": "Prevent IoT devices integrated into the campus network from accessing community forums and discussion boards",
         "category": "regulate",
         "action": "block",
         "requirement": null,
-        "targets": "devices connected via the staff-only network",
+        "targets": [
+            "IoT devices",
+            "community forums",
+            "discussion boards"
+        ],
         "magnitude": null,
         "start_time": "now",
         "end_time": null
     },
     {
-        "intent": "Detect IoT devices that are compatible with firewall configuration.",
-        "category": "construct",
-        "action": "discover",
+        "intent": "Guest WiFi network should have its packet loss rates monitored",
+        "category": "regulate",
+        "action": "monitor",
         "requirement": null,
-        "targets": null,
+        "targets": "packet loss rates of guest WiFi network",
         "magnitude": null,
         "start_time": "now",
         "end_time": null
     },
     {
-        "intent": "Request the configuration files from IoT devices.",
+        "intent": "Let workstations in the design team know that secure peer-to-peer file sharing service critical firmware updates is available",
+        "category": "transfer",
+        "action": "push",
+        "requirement": "secure peer-to-peer file sharing service and critical firmware updates",
+        "targets": "workstations in the design team",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Announce the availability of updated antivirus definitions on the IoT devices in the room",
+        "category": "transfer",
+        "action": "advertise",
+        "requirement": "atualiza\u00e7\u00f5es de defini\u00e7\u00f5es de antiv\u00edrus",
+        "targets": "IoT devices in the room",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Number of failed connection attempts associated with devices connected to the dormitory network needs to be tracked",
+        "category": "regulate",
+        "action": "collect",
+        "requirement": null,
+        "targets": "devices connected to the dormitory network",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Favor IoT device operations",
+        "category": "construct",
+        "action": "prioritize",
+        "requirement": null,
+        "targets": "IoT devices",
+        "magnitude": "latency lower than 10ms",
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "configuration files has to be retrieved from central media server",
         "category": "construct",
         "action": "pull",
+        "requirement": null,
+        "targets": "central media server",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Announce the availability of bug fixes for existing software on the devices in the marketing department",
+        "category": "transfer",
+        "action": "advertise",
+        "requirement": "bug fixes",
+        "targets": "devices in the marketing department",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "For visitors accessing the conference room network, access to VPNs or proxy tools must be denied",
+        "category": "regulate",
+        "action": "block",
+        "requirement": null,
+        "targets": "visitors accessing the conference room network",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "List WiFi clients configured for HTTP/2 protocol",
+        "category": "construct",
+        "action": "discover",
+        "requirement": "protocolo HTTP/2",
+        "targets": "clientes WiFi configurados para HTTP/2",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Bandwidth consumption per device for public devices in the library must be tracked",
+        "category": "regulate",
+        "action": "monitor",
+        "requirement": null,
+        "targets": "public devices in the library",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "IoT devices has the configuration files request it",
+        "category": "construct",
+        "action": "discover",
         "requirement": null,
         "targets": "IoT devices",
         "magnitude": null,
@@ -120,31 +1815,3451 @@
         "end_time": null
     },
     {
-        "intent": "Track duration of active sessions of guest Wi-Fi network",
-        "category": "construct",
-        "action": "discover",
-        "requirement": null,
-        "targets": "guest Wi-Fi network",
+        "intent": "Let devices in the quality assurance lab know that security patches is available.",
+        "category": "transfer",
+        "action": "pull",
+        "requirement": "security patches",
+        "targets": "devices in the quality assurance lab",
         "magnitude": null,
         "start_time": "now",
         "end_time": null
     },
     {
-        "intent": "Request the system performance updates from cloud.",
+        "intent": "prevent iot devices integrated into the campus network from accessing browsing of ecommerce platforms",
+        "category": "regulate",
+        "action": "block",
+        "requirement": null,
+        "targets": [
+            "IoT devices integrated into the campus network"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "notify mobile devices in the logistics team that a policy enforcement script is ready",
+        "category": "transfer",
+        "action": "push",
+        "requirement": "policy enforcement script",
+        "targets": [
+            "mobile devices in the logistics team"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Ensure that upload speed is limited to 80 mbps for IoT device operations",
+        "category": "regulate",
+        "action": "limit",
+        "requirement": null,
+        "targets": "IoT devices",
+        "magnitude": "upload speed: 80mbps",
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Ensure that laptops used by employees have higher network priority by providing jitter lower than 20ms",
+        "category": "regulate",
+        "action": "prioritize",
+        "requirement": "jitter lower than 20ms",
+        "targets": "laptops used by employees",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Prevent devices actively using the library internet service from accessing browsing of ecommerce platforms",
+        "category": "regulate",
+        "action": "block",
+        "requirement": "browsing of ecommerce platforms",
+        "targets": "devices actively using the library internet service",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Ensure that download speed is limited to 80 mbps for guest wifi network",
+        "category": "regulate",
+        "action": "limit",
+        "requirement": "download speed to 80 mbps",
+        "targets": "guest WiFi network",
+        "magnitude": "80 mbps",
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Announce the availability of updated antivirus definitions on the workstations in the design team",
+        "category": "transfer",
+        "action": "advertise",
+        "requirement": "updated antivirus definitions",
+        "targets": "workstations in the design team",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Request the system performance updates from cloud",
         "category": "transfer",
         "action": "pull",
-        "requirement": null,
+        "requirement": "system performance updates",
         "targets": "cloud",
         "magnitude": null,
         "start_time": "now",
         "end_time": null
     },
     {
-        "intent": "Detect IoT devices that are compatible with HTTP/2 protocol.",
+        "intent": "",
+        "category": "error",
+        "action": "",
+        "requirement": "",
+        "targets": "",
+        "magnitude": "",
+        "start_time": "",
+        "end_time": ""
+    },
+    {
+        "intent": "video conferencing traffic must have priority in the network supply it with latency lower than 10ms, video conferencing traffic should be given preference",
+        "category": "regulate",
+        "action": "prioritize",
+        "requirement": "latency lower than 10ms",
+        "targets": "video conferencing traffic",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Push system performance updates to devices in the quality assurance lab",
+        "category": "transfer",
+        "action": "push",
+        "requirement": null,
+        "targets": "devices in the quality assurance lab",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "laptops used by employees must have priority in the network supply it with upload speed greater than 10mbps laptops used by employees should be given preference",
+        "category": "regulate",
+        "action": "prioritize",
+        "requirement": "upload speed greater than 10mbps",
+        "targets": [
+            "laptops used by employees"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Critical firmware updates must be delivered to devices in the quality assurance lab",
+        "category": "transfer",
+        "action": "push",
+        "requirement": "cr\u00edticos de firmware",
+        "targets": [
+            "devices in the quality assurance lab"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Request the security patches from central media server",
+        "category": "transfer",
+        "action": "pull",
+        "requirement": "security patches",
+        "targets": [
+            "central media server"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Ensure messaging and chat services is not accessible for systems linked to the administrative LAN",
+        "category": "regulate",
+        "action": "block",
+        "requirement": "messaging and chat services",
+        "targets": "systems linked to the administrative LAN",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "log packet loss rates associated with mobile phones in the student network",
+        "category": "regulate",
+        "action": "monitor",
+        "requirement": null,
+        "targets": [
+            "mobile phones",
+            "student network"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Custom monitoring tools has to be retrieved from IoT devices",
+        "category": "construct",
+        "action": "pull",
+        "requirement": null,
+        "targets": [
+            "IoT devices"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "for visitors accessing the conference room network deny connections to online gaming environments",
+        "category": "regulate",
+        "action": "block",
+        "requirement": "online gaming environments",
+        "targets": "visitors accessing the conference room network",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Limit download and upload speed of devices in the conference room network",
+        "category": "regulate",
+        "action": "prioritize",
+        "requirement": null,
+        "targets": "devices in the conference room network",
+        "magnitude": "latency lower than 10ms",
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Throttle background synchronization to a maximum of 10mbps per device for devices in the conference room network",
+        "category": "regulate",
+        "action": "limit",
+        "requirement": "background synchronization",
+        "targets": "devices in the conference room network",
+        "magnitude": "10mbps per device",
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Let bug fixes for existing software be known by all laptops used by remote workers",
+        "category": "transfer",
+        "action": "push",
+        "requirement": "bug fixes for existing software",
+        "targets": [
+            "all laptops"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "IoT devices supporting real-time streaming capabilities need to be identified",
         "category": "construct",
         "action": "discover",
-        "requirement": "HTTP/2 protocol",
+        "requirement": "real-time streaming capabilities",
+        "targets": "IoT devices",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Request the configuration files from central media server",
+        "category": "transfer",
+        "action": "pull",
+        "requirement": null,
+        "targets": [
+            "central media server"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Deliver new application features for all laptops used by remote workers",
+        "category": "construct",
+        "action": "push",
+        "requirement": null,
+        "targets": "all laptops used by remote workers",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Track data transfer volumes of personal laptops in the faculty network",
+        "category": "construct",
+        "action": "discover",
+        "requirement": null,
+        "targets": "personal laptops in the faculty network",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Cloud has the configuration files request it",
+        "category": "construct",
+        "action": "push",
+        "requirement": null,
         "targets": null,
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "notify mobile devices in the logistics team that a secure peer-to-peer file sharing service critical firmware updates is ready",
+        "category": "transfer",
+        "action": "push",
+        "requirement": "secure peer-to-peer file sharing service and critical firmware updates",
+        "targets": [
+            "mobile devices in the logistics team"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "request the policy enforcement scripts from central media server",
+        "category": "construct",
+        "action": "pull",
+        "requirement": null,
+        "targets": "central media server",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Filesharing and peer-to-peer systems should be denied for visitors accessing the conference room network",
+        "category": "regulate",
+        "action": "block",
+        "requirement": null,
+        "targets": "visitors accessing the conference room network",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "request the secure peer-to-peer file sharing service critical firmware updates from cloud",
+        "category": "transfer",
+        "action": "push",
+        "requirement": "firmware updates",
+        "targets": null,
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "For systems linked to the administrative LAN, deny connections to online gaming environments",
+        "category": "regulate",
+        "action": "block",
+        "requirement": null,
+        "targets": "systems linked to the administrative LAN",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "for visitors accessing the conference room network deny platforms hosting video streaming services",
+        "category": "regulate",
+        "action": "block",
+        "requirement": null,
+        "targets": "platforms hosting video streaming services on the conference room network",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "notify all laptops used by remote workers that a bug fixes for existing software is ready",
+        "category": "transfer",
+        "action": "push",
+        "requirement": "bug fix for existing software",
+        "targets": "all laptops used by remote workers",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Assign top priority for video conferencing traffic",
+        "category": "regulate",
+        "action": "prioritize",
+        "requirement": null,
+        "targets": "video conferencing traffic",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "identify wifi clients supporting vpn compatibility",
+        "category": "construct",
+        "action": "discover",
+        "requirement": "compatibilidade com VPN",
+        "targets": "clients WiFi compat\u00edveis com VPN",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Browsing of ecommerce platforms should be denied for IoT devices integrated into the campus network",
+        "category": "regulate",
+        "action": "block",
+        "requirement": null,
+        "targets": "IoT devices integrated into the campus network",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Prevent end-user devices in the campus guest network from accessing sites used for torrent downloads",
+        "category": "regulate",
+        "action": "block",
+        "requirement": "sites used for torrent downloads",
+        "targets": "end-user devices in the campus guest network",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "connected hosts supporting dualband WiFi need to be identified",
+        "category": "construct",
+        "action": "discover",
+        "requirement": null,
+        "targets": "hosts supporting dualband WiFi",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Detect all routers that are compatible with WiFi 6 capability",
+        "category": "construct",
+        "action": "discover",
+        "requirement": null,
+        "targets": "todos os roteadores compat\u00edveis com WiFi 6",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Cap the background synchronization to 30 mbps for IoT device operations",
+        "category": "regulate",
+        "action": "limit",
+        "requirement": null,
+        "targets": "IoT devices",
+        "magnitude": "30mbps",
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "configuration files must be fetched from the network-connected printers",
+        "category": "construct",
+        "action": "pull",
+        "requirement": null,
+        "targets": "network-connected printers",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Give preference to laptops used by employees",
+        "category": "regulate",
+        "action": "prioritize",
+        "requirement": null,
+        "targets": "laptops used by employees",
+        "magnitude": "latency lower than 10ms",
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Number of failed connection attempts for mobile phones in the student network must be tracked",
+        "category": "regulate",
+        "action": "track",
+        "requirement": null,
+        "targets": "mobile phones in the student network",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Retrieve new application features from workstations in the design team",
+        "category": "construct",
+        "action": "discover",
+        "requirement": null,
+        "targets": [
+            "workstations in the design team"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "for enduser devices in the campus guest network access to community forums and discussion boards must be denied",
+        "category": "regulate",
+        "action": "block",
+        "requirement": null,
+        "targets": "enduser devices in the campus guest network",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Announce the availability of bug fixes for existing software on the all laptops used by remote workers",
+        "category": "transfer",
+        "action": "push",
+        "requirement": "bug fixes for existing software",
+        "targets": "all laptops used by remote workers",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Ensure that laptops used by employees have higher network priority by providing latency lower than 10ms",
+        "category": "regulate",
+        "action": "prioritize",
+        "requirement": null,
+        "targets": "laptops used by employees",
+        "magnitude": "latency lower than 10ms",
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Track number of failed connection attempts of devices in the conference room network",
+        "category": "construct",
+        "action": "discover",
+        "requirement": null,
+        "targets": "devices in the conference room network",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Custom monitoring tools must be fetched from the IoT devices",
+        "category": "construct",
+        "action": "pull",
+        "requirement": null,
+        "targets": [
+            "IoT devices"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "new application features is to be pushed to mobile devices in the logistics team",
+        "category": "transfer",
+        "action": "push",
+        "requirement": null,
+        "targets": "mobile devices in the logistics team",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "",
+        "category": "error",
+        "action": "",
+        "requirement": "",
+        "targets": "",
+        "magnitude": "",
+        "start_time": "",
+        "end_time": ""
+    },
+    {
+        "intent": "For devices actively using the library internet service, deny sites used for torrent downloads",
+        "category": "regulate",
+        "action": "block",
+        "requirement": "sites used for torrent downloads",
+        "targets": null,
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Guest WiFi network should have its bandwidth consumption per device monitored",
+        "category": "regulate",
+        "action": "monitor",
+        "requirement": null,
+        "targets": "bandwidth consumption of devices on guest WiFi network",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Notify devices in the marketing department that a configuration file is ready",
+        "category": "transfer",
+        "action": "push",
+        "requirement": "configura\u00e7\u00e3o de arquivo",
+        "targets": "devices in the marketing department",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "personal laptops in the faculty network should have its number of failed connection attempts monitored",
+        "category": "regulate",
+        "action": "monitor",
+        "requirement": null,
+        "targets": "laptops in the faculty network",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Pinpoint guest network devices with compatibility for firewall configuration",
+        "category": "construct",
+        "action": "discover",
+        "requirement": null,
+        "targets": [
+            "guest network devices"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Push new application features to all servers in the data center",
+        "category": "transfer",
+        "action": "push",
+        "requirement": null,
+        "targets": "all servers in the data center",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "For systems linked to the administrative LAN, deny platforms hosting video streaming services",
+        "category": "regulate",
+        "action": "block",
+        "requirement": "video streaming services",
+        "targets": "systems linked to the administrative LAN",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Cap the maximum bandwidth to 10mbps per device for streaming services",
+        "category": "regulate",
+        "action": "limit",
+        "requirement": "bandwidth",
+        "targets": "devices for streaming services",
+        "magnitude": "10mbps per device",
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "configuration files must be delivered to IoT devices in the smart factory",
+        "category": "transfer",
+        "action": "push",
+        "requirement": null,
+        "targets": [
+            "IoT devices in the smart factory"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "for devices connected via the staffonly network access to filesharing and peertopeer systems must be denied",
+        "category": "regulate",
+        "action": "block",
+        "requirement": "filesharing and peertopeer systems",
+        "targets": "devices connected via the staffonly network",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Identify all switches supporting real-time streaming capabilities",
+        "category": "construct",
+        "action": "discover",
+        "requirement": null,
+        "targets": "todos os switches",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Wifi clients supporting HTTP2 protocol need to be identified",
+        "category": "construct",
+        "action": "discover",
+        "requirement": "suporte ao protocolo HTTP2",
+        "targets": "clientes WiFi",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Cap the download speed to 10mbps per device for printers and scanners connected to the network",
+        "category": "regulate",
+        "action": "limit",
+        "requirement": null,
+        "targets": [
+            "printers",
+            "scanners"
+        ],
+        "magnitude": "10mbps per device",
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Upload and download speeds per device for IoT devices across the campus must be tracked",
+        "category": "construct",
+        "action": "discover",
+        "requirement": null,
+        "targets": "IoT devices across the campus",
+        "magnitude": "upload and download speeds per device",
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "video conferencing traffic must be limited to 50mbps per device",
+        "category": "regulate",
+        "action": "limit",
+        "requirement": null,
+        "targets": "video conferencing traffic",
+        "magnitude": "50mbps per device",
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "For public devices on the common area networks deny sites used for torrent downloads",
+        "category": "regulate",
+        "action": "block",
+        "requirement": "sites used for torrent downloads",
+        "targets": "public devices on the common area networks",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Laptops used by employees must have priority in the network; supply it with download speed greater than 100mbps, laptops used by employees should be given preference",
+        "category": "regulate",
+        "action": "prioritize",
+        "requirement": "download speed greater than 100mbps",
+        "targets": "laptops used by employees",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "deliver configuration files for all servers in the data center",
+        "category": "transfer",
+        "action": "push",
+        "requirement": null,
+        "targets": [
+            "all servers in the data center"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "For mobile devices in the logistics team, push configuration files",
+        "category": "transfer",
+        "action": "push",
+        "requirement": null,
+        "targets": "mobile devices in the logistics team",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Assign top priority for research lab computers.",
+        "category": "regulate",
+        "action": "prioritize",
+        "requirement": null,
+        "targets": "computers do laborat\u00f3rio de pesquisa",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Track upload and download speeds per device of personal laptops in the faculty network",
+        "category": "regulate",
+        "action": "monitor",
+        "requirement": null,
+        "targets": "personal laptops in the faculty network",
+        "magnitude": "speeds",
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "video conferencing traffic must be limited to 50mbps per device",
+        "category": "regulate",
+        "action": "limit",
+        "requirement": null,
+        "targets": "video conferencing traffic",
+        "magnitude": "50mbps per device",
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Let new application features be known by devices in the marketing department",
+        "category": "transfer",
+        "action": "push",
+        "requirement": null,
+        "targets": [
+            "devices in the marketing department"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "All routers supporting real-time streaming capabilities need to be identified",
+        "category": "construct",
+        "action": "discover",
+        "requirement": "capacidades de streaming em tempo real",
+        "targets": "todos os roteadores",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "",
+        "category": "error",
+        "action": "",
+        "requirement": "",
+        "targets": "",
+        "magnitude": "",
+        "start_time": "",
+        "end_time": ""
+    },
+    {
+        "intent": "Broadcast the readiness of secure peer-to-peer file sharing service critical firmware updates for IoT devices in the room",
+        "category": "transfer",
+        "action": "advertise",
+        "requirement": "secure peer-to-peer file sharing service and critical firmware updates",
+        "targets": "IoT devices in the room",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Cap the background synchronization to 10mbps per device for printers and scanners connected to the network",
+        "category": "regulate",
+        "action": "limit",
+        "requirement": "background synchronization",
+        "targets": "printers and scanners connected to the network",
+        "magnitude": "10mbps per device",
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "network connected printers has the configuration files request it",
+        "category": "construct",
+        "action": "advertise",
+        "requirement": null,
+        "targets": "network connected printers",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "For public devices on the common area networks, access to websites containing explicit content must be denied",
+        "category": "regulate",
+        "action": "block",
+        "requirement": "websites containing explicit content",
+        "targets": "public devices on the common area networks",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "track packet loss rates of mobile phones in the student network",
+        "category": "construct",
+        "action": "discover",
+        "requirement": null,
+        "targets": "mobile phones in the student network",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Ensure that IoT device operations have higher network priority by providing download speed greater than 100mbps",
+        "category": "regulate",
+        "action": "prioritize",
+        "requirement": null,
+        "targets": "IoT devices",
+        "magnitude": "download speed greater than 100mbps",
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Push custom monitoring tools to all laptops used by remote workers",
+        "category": "transfer",
+        "action": "push",
+        "requirement": null,
+        "targets": "all laptops used by remote workers",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Identify WiFi clients that support the IPv6 protocol",
+        "category": "construct",
+        "action": "discover",
+        "requirement": "suporte ao protocolo IPv6",
+        "targets": "todos os clientes de WiFi",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Guest WiFi network needs to be prioritized",
+        "category": "regulate",
+        "action": "prioritize",
+        "requirement": null,
+        "targets": "guest WiFi network",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "printers and scanners connected to the network should have its duration of active sessions monitored",
+        "category": "regulate",
+        "action": "monitor",
+        "requirement": null,
+        "targets": "printers and scanners connected to the network",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Log traffic volume associated with guest WiFi network",
+        "category": "construct",
+        "action": "discover",
+        "requirement": null,
+        "targets": [
+            "guest WiFi network"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Deliver custom monitoring tools for all laptops used by remote workers",
+        "category": "construct",
+        "action": "push",
+        "requirement": null,
+        "targets": "all laptops used by remote workers",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Throttle upload speed to a maximum of 50mbps per device for printers and scanners connected to the network",
+        "category": "regulate",
+        "action": "limit",
+        "requirement": "upload speed",
+        "targets": "printers and scanners connected to the network",
+        "magnitude": "50mbps per device",
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Push updated antivirus definitions to workstations in the design team",
+        "category": "transfer",
+        "action": "push",
+        "requirement": null,
+        "targets": [
+            "workstations in the design team"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Throttle upload speed to a maximum of 50mbps per device for devices connected to the dormitory network",
+        "category": "regulate",
+        "action": "limit",
+        "requirement": null,
+        "targets": "devices connected to the dormitory network",
+        "magnitude": "50mbps per device",
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Ensure tracking of bandwidth consumption per device for mobile phones in the student network",
+        "category": "regulate",
+        "action": "prioritize",
+        "requirement": "bandwidth consumption tracking per device",
+        "targets": "mobile phones in the student network",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "For devices connected via the staffonly network, access to platforms hosting video streaming services must be denied",
+        "category": "regulate",
+        "action": "block",
+        "requirement": null,
+        "targets": "devices connected via the staffonly network",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "throttle background synchronization to a maximum of 50mbps per device for guest wifi network",
+        "category": "regulate",
+        "action": "limit",
+        "requirement": null,
+        "targets": "devices on the guest wifi network",
+        "magnitude": "50mbps per device",
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Keep a record of bandwidth consumption per device related to research lab computers",
+        "category": "regulate",
+        "action": "monitor",
+        "requirement": null,
+        "targets": "research lab computers",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "guest wifi network must have priority in the network, it should be given preference",
+        "category": "regulate",
+        "action": "prioritize",
+        "requirement": null,
+        "targets": "guest WiFi network",
+        "magnitude": "latency lower than 10ms",
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Ensure that guest WiFi network has higher network priority by providing upload speed greater than 10mbps",
+        "category": "regulate",
+        "action": "prioritize",
+        "requirement": "upload speed greater than 10mbps",
+        "targets": "guest WiFi network",
+        "magnitude": ">10mbps",
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Detect LAN endpoints that are compatible with firewall configuration",
+        "category": "construct",
+        "action": "discover",
+        "requirement": null,
+        "targets": "LAN endpoints",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Let policy enforcement scripts be known by IoT devices in the room",
+        "category": "transfer",
+        "action": "advertise",
+        "requirement": "policy enforcement scripts",
+        "targets": [
+            "IoT devices in the room"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Cap the download speed to 50mbps per device for laptops used by employees",
+        "category": "regulate",
+        "action": "limit",
+        "requirement": "download speed",
+        "targets": "laptops used by employees",
+        "magnitude": "50mbps per device",
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "For devices connected via the staffonly network, access to sites used for torrent downloads must be denied.",
+        "category": "regulate",
+        "action": "block",
+        "requirement": "torrent downloads",
+        "targets": null,
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Let updated antivirus definitions be known by mobile devices in the logistics team",
+        "category": "transfer",
+        "action": "push",
+        "requirement": "updated antivirus definitions",
+        "targets": "mobile devices in the logistics team",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Deliver critical firmware updates for workstations in the design team",
+        "category": "transfer",
+        "action": "push",
+        "requirement": null,
+        "targets": "workstations in the design team",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Broadcast the readiness of custom monitoring tools for all laptops used by remote workers",
+        "category": "construct",
+        "action": "advertise",
+        "requirement": "custom monitoring tools",
+        "targets": "all laptops used by remote workers",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Let devices in the marketing department know that secure peer-to-peer file sharing service critical firmware updates is available",
+        "category": "transfer",
+        "action": "pull",
+        "requirement": "secure peertopeer file sharing servicecritical firmware updates",
+        "targets": "devices in the marketing department",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Latest software updates has to be retrieved from compatible devices",
+        "category": "transfer",
+        "action": "pull",
+        "requirement": "latest software updates",
+        "targets": [
+            "compatible devices"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Broadcast the readiness of system performance updates for IoT devices in the marketing department",
+        "category": "transfer",
+        "action": "push",
+        "requirement": null,
+        "targets": [
+            "IoT devices in the marketing department"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Traffic volume associated with devices connected to the dormitory network needs to be tracked",
+        "category": "construct",
+        "action": "discover",
+        "requirement": null,
+        "targets": [
+            "devices connected to the dormitory network"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "for public devices on the common area networks deny connections to online gaming environments",
+        "category": "regulate",
+        "action": "block",
+        "requirement": "online gaming environments",
+        "targets": "public devices on the common area networks",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "guest wifi network must have priority in the network supply it with jitter lower than 20ms, guest wifi network should be given preference",
+        "category": "regulate",
+        "action": "prioritize",
+        "requirement": null,
+        "targets": "guest WiFi network",
+        "magnitude": "jitter lower than 20ms",
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Number of failed connection attempts for personal laptops in the faculty network must be tracked",
+        "category": "regulate",
+        "action": "limit",
+        "requirement": null,
+        "targets": "personal laptops in the faculty network",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Keep a record of number of failed connection attempts related to mobile phones in the student network",
+        "category": "regulate",
+        "action": "collect",
+        "requirement": null,
+        "targets": "failed connection attempts related to mobile phones in the student network",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Make sure maximum bandwidth is restricted for laptops used by employees",
+        "category": "regulate",
+        "action": "limit",
+        "requirement": null,
+        "targets": "laptops used by employees",
+        "magnitude": "bandwidth restriction",
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "deliver critical firmware updates for all laptops used by remote workers",
+        "category": "transfer",
+        "action": "push",
+        "requirement": "cr\u00edticas atualiza\u00e7\u00f5es de firmware",
+        "targets": "todos os laptops utilizados pelos trabalhadores remotos",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "for devices connected via the staffonly network access to community forums and discussion boards must be denied",
+        "category": "regulate",
+        "action": "block",
+        "requirement": null,
+        "targets": "devices connected via the staffonly network",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Keep a record of duration of active sessions related to public devices in the library",
+        "category": "construct",
+        "action": "discover",
+        "requirement": null,
+        "targets": "public devices in the library",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Identify all switches supporting firewall configuration",
+        "category": "construct",
+        "action": "discover",
+        "requirement": null,
+        "targets": "all switches",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Video conferencing traffic must be limited to 10mbps per device, maximum bandwidth should be limited to 10mbps per device for video conferencing traffic",
+        "category": "regulate",
+        "action": "limit",
+        "requirement": "video conferencing traffic",
+        "targets": null,
+        "magnitude": "10mbps per device",
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Deliver bug fixes for existing software for IoT devices in the smart factory",
+        "category": "transfer",
+        "action": "push",
+        "requirement": "bug fixes",
+        "targets": "IoT devices in the smart factory",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Retrieve latest software updates from the compatible devices",
+        "category": "transfer",
+        "action": "pull",
+        "requirement": "latest software updates",
+        "targets": "compatible devices",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Notify all laptops used by remote workers that a new application features is ready",
+        "category": "transfer",
+        "action": "push",
+        "requirement": null,
+        "targets": [
+            "all laptops used by remote workers"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Ensure that research lab computers have higher network priority by providing upload speed greater than 10mbps",
+        "category": "regulate",
+        "action": "prioritize",
+        "requirement": null,
+        "targets": "research lab computers",
+        "magnitude": "upload speed greater than 10mbps",
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Monitor bandwidth consumption per device for IoT devices across the campus",
+        "category": "construct",
+        "action": "discover",
+        "requirement": null,
+        "targets": [
+            "IoT devices across the campus"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "personal laptops in the faculty network should have its real-time data throughput per device monitored",
+        "category": "construct",
+        "action": "discover",
+        "requirement": null,
+        "targets": "laptops in the faculty network",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Ensure browsing of ecommerce platforms is not accessible for end-user devices in the campus guest network",
+        "category": "regulate",
+        "action": "block",
+        "requirement": "ecommerce platforms",
+        "targets": "end-user devices in the campus guest network",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "new application features needs to be forwarded to devices in the quality assurance lab",
+        "category": "transfer",
+        "action": "push",
+        "requirement": "novas funcionalidades de aplica\u00e7\u00e3o",
+        "targets": [
+            "devices in the quality assurance lab"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Give preference to devices in the conference room network",
+        "category": "regulate",
+        "action": "prioritize",
+        "requirement": null,
+        "targets": "devices in the conference room network",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Retrieve new application features from IoT devices",
+        "category": "construct",
+        "action": "discover",
+        "requirement": null,
+        "targets": [
+            "IoT devices"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Let workstations in the design team know that bug fixes for existing software is available.",
+        "category": "transfer",
+        "action": "push",
+        "requirement": null,
+        "targets": "workstations in the design team",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Retrieve configuration files from the network-connected printers",
+        "category": "construct",
+        "action": "pull",
+        "requirement": null,
+        "targets": [
+            "network-connected printers"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Support for VPN compatibility on various routers",
+        "category": "construct",
+        "action": "discover",
+        "requirement": null,
+        "targets": "all routers",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "detect LAN endpoints that are compatible with VPN",
+        "category": "construct",
+        "action": "discover",
+        "requirement": "VPN compatibility",
+        "targets": [
+            "all LAN endpoints"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Broadcast the readiness of system performance updates for IoT devices in the room.",
+        "category": "construct",
+        "action": "advertise",
+        "requirement": null,
+        "targets": "all servers in the data center",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "advertise the presence of bug fixes for existing software to compatible devices",
+        "category": "construct",
+        "action": "advertise",
+        "requirement": null,
+        "targets": "compatible devices",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Prevent IoT devices integrated into the campus network from accessing filesharing and peer-to-peer systems",
+        "category": "regulate",
+        "action": "block",
+        "requirement": null,
+        "targets": "IoT devices in the campus network",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "notify compatible devices that a updated antivirus definitions is ready",
+        "category": "transfer",
+        "action": "push",
+        "requirement": "atualiza\u00e7\u00f5es de defini\u00e7\u00f5es de antiv\u00edrus",
+        "targets": null,
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Video conferencing traffic must have priority in the network, it should be given preference.",
+        "category": "regulate",
+        "action": "prioritize",
+        "requirement": null,
+        "targets": "video conferencing traffic",
+        "magnitude": "jitter lower than 20ms",
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Ensure websites containing explicit content is not accessible for computers operating within the dormitory wifi",
+        "category": "regulate",
+        "action": "block",
+        "requirement": "websites containing explicit content",
+        "targets": "computers operating within the dormitory wifi",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "",
+        "category": "error",
+        "action": "",
+        "requirement": "",
+        "targets": "",
+        "magnitude": "",
+        "start_time": "",
+        "end_time": ""
+    },
+    {
+        "intent": "Local network department has the updated antivirus definitions request it",
+        "category": "transfer",
+        "action": "push",
+        "requirement": "atualiza\u00e7\u00f5es de defini\u00e7\u00f5es de antiv\u00edrus",
+        "targets": "departamento de rede local",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Duration of active sessions associated with devices in the conference room network needs to be tracked",
+        "category": "construct",
+        "action": "discover",
+        "requirement": null,
+        "targets": "devices in the conference room network",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Throttle download speed to a maximum of 80 mbps for printers and scanners connected to the network",
+        "category": "regulate",
+        "action": "limit",
+        "requirement": "download speed",
+        "targets": "printers and scanners connected to the network",
+        "magnitude": "80mbps",
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "policy enforcement scripts is to be pushed to all servers in the data center",
+        "category": "transfer",
+        "action": "push",
+        "requirement": "policy enforcement scripts",
+        "targets": "all servers in the data center",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "pull security patches from the central media server",
+        "category": "transfer",
+        "action": "pull",
+        "requirement": "security patches",
+        "targets": [
+            "central media server"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Request the policy enforcement scripts from cloud",
+        "category": "transfer",
+        "action": "pull",
+        "requirement": null,
+        "targets": "policy enforcement scripts",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Cap the minimum bandwidth to 80 mbps for devices connected to the dormitory network",
+        "category": "regulate",
+        "action": "limit",
+        "requirement": "minimum bandwidth",
+        "targets": "devices connected to the dormitory network",
+        "magnitude": "80mbps",
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Custom monitoring tools need to be forwarded to workstations in the design team",
+        "category": "transfer",
+        "action": "push",
+        "requirement": null,
+        "targets": [
+            "workstations in the design team"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Cap the background synchronization to 10mbps per device for video conferencing traffic",
+        "category": "regulate",
+        "action": "limit",
+        "requirement": null,
+        "targets": null,
+        "magnitude": "10mbps per device",
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Ensure bug fixes for existing software is sent to devices in the quality assurance lab",
+        "category": "transfer",
+        "action": "push",
+        "requirement": "bug fixes",
+        "targets": [
+            "devices in the quality assurance lab"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Throttle background synchronization to a maximum of 80 mbps for devices in the conference room network",
+        "category": "regulate",
+        "action": "limit",
+        "requirement": "background synchronization",
+        "targets": "devices in the conference room network",
+        "magnitude": "80mbps",
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Deliver new application features for devices in the marketing department",
+        "category": "construct",
+        "action": "push",
+        "requirement": null,
+        "targets": [
+            "devices in the marketing department"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Pull configuration files from the network-connected printers",
+        "category": "transfer",
+        "action": "pull",
+        "requirement": "configuration files",
+        "targets": "network-connected printers",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Forward security patches to devices in the marketing department",
+        "category": "transfer",
+        "action": "push",
+        "requirement": "seguran\u00e7a",
+        "targets": [
+            "devices in the marketing department"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "http2 protocol is supported by which of iot devices",
+        "category": "construct",
+        "action": "discover",
+        "requirement": null,
+        "targets": [
+            "some IoT devices"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "For devices in the quality assurance lab, push policy enforcement scripts",
+        "category": "transfer",
+        "action": "push",
+        "requirement": "policy enforcement scripts",
+        "targets": "devices in the quality assurance lab",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Cap the download and upload speed to 80 mbps for IoT device operations",
+        "category": "regulate",
+        "action": "limit",
+        "requirement": null,
+        "targets": "IoT devices",
+        "magnitude": "80mbps",
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Configuration files need to be forwarded to devices in the quality assurance lab",
+        "category": "transfer",
+        "action": "push",
+        "requirement": null,
+        "targets": [
+            "devices in the quality assurance lab"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "List all routers configured for HTTP2 protocol",
+        "category": "construct",
+        "action": "discover",
+        "requirement": "suporte ao protocolo HTTP2",
+        "targets": [
+            "todos os roteadores"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "IoT device operations must be limited to 50mbps per device",
+        "category": "regulate",
+        "action": "limit",
+        "requirement": null,
+        "targets": "IoT devices",
+        "magnitude": "50mbps per device",
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "for visitors accessing the conference room network deny browsing of ecommerce platforms",
+        "category": "regulate",
+        "action": "block",
+        "requirement": "browsing ecommerce platforms",
+        "targets": "visitors accessing the conference room network",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "IoT devices has the policy enforcement scripts request it",
+        "category": "construct",
+        "action": "advertise",
+        "requirement": null,
+        "targets": "IoT devices",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Ensure that download speed is limited for guest WiFi network",
+        "category": "regulate",
+        "action": "limit",
+        "requirement": "download speed",
+        "targets": "guest WiFi network",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Notify devices in the quality assurance lab that a new application features is ready",
+        "category": "transfer",
+        "action": "push",
+        "requirement": null,
+        "targets": [
+            "devices in the quality assurance lab"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "printers and scanners connected to the network must be limited to 10mbps per device",
+        "category": "regulate",
+        "action": "limit",
+        "requirement": "download and upload speed",
+        "targets": "printers and scanners connected to the network",
+        "magnitude": "10mbps per device",
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Ensure that devices connected to the dormitory network have higher network priority by providing jitter lower than 20ms",
+        "category": "regulate",
+        "action": "prioritize",
+        "requirement": null,
+        "targets": "devices connected to the dormitory network",
+        "magnitude": "jitter lower than 20ms",
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Identify all switches supporting active SSH service",
+        "category": "construct",
+        "action": "discover",
+        "requirement": null,
+        "targets": "switches",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Video conferencing traffic must have priority in the network. Supply it with download speed greater than 100mbps, video conferencing traffic should be given preference",
+        "category": "regulate",
+        "action": "prioritize",
+        "requirement": "download speed > 100mbps",
+        "targets": null,
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Let configuration files be known by devices in the quality assurance lab",
+        "category": "transfer",
+        "action": "advertise",
+        "requirement": "configuration files",
+        "targets": "devices in the quality assurance lab",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Broadcast the readiness of system performance updates for mobile devices in the logistics team",
+        "category": "construct",
+        "action": "advertise",
+        "requirement": "system performance updates",
+        "targets": "mobile devices in the logistics team",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Assign top priority for research lab computers.",
+        "category": "regulate",
+        "action": "prioritize",
+        "requirement": null,
+        "targets": "research lab computers",
+        "magnitude": "latency lower than 10ms",
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Deliver security patches for all servers in the data center",
+        "category": "transfer",
+        "action": "push",
+        "requirement": "security patches",
+        "targets": "all servers in the data center",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Maximum bandwidth should be limited for devices in the conference room network",
+        "category": "regulate",
+        "action": "limit",
+        "requirement": "bandwidth",
+        "targets": "devices in the conference room network",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Ensure messaging and chat services is not accessible for enduser devices in the campus guest network",
+        "category": "regulate",
+        "action": "block",
+        "requirement": "messaging and chat services",
+        "targets": "enduser devices in the campus guest network",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "",
+        "category": "error",
+        "action": "",
+        "requirement": "",
+        "targets": "",
+        "magnitude": "",
+        "start_time": "",
+        "end_time": ""
+    },
+    {
+        "intent": "printers and scanners connected to the network must have priority in the network, supply it with jitter lower than 20ms",
+        "category": "regulate",
+        "action": "prioritize",
+        "requirement": null,
+        "targets": "printers and scanners connected to the network",
+        "magnitude": "jitter lower than 20ms",
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Prevent computers operating within the dormitory wifi from accessing websites containing explicit content",
+        "category": "regulate",
+        "action": "block",
+        "requirement": "websites containing explicit content",
+        "targets": "computers operating within the dormitory wifi",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Broadcast the readiness of security patches for mobile devices in the logistics team",
+        "category": "transfer",
+        "action": "advertise",
+        "requirement": "seguran\u00e7a de patchs",
+        "targets": "dispositivos m\u00f3veis da equipe de log\u00edstica",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "For workstations in the design team, push security patches",
+        "category": "transfer",
+        "action": "push",
+        "requirement": "seguran\u00e7a de patches",
+        "targets": "workstations in the design team",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "policy enforcement scripts is to be pushed to workstations in the design team",
+        "category": "transfer",
+        "action": "push",
+        "requirement": null,
+        "targets": "workstations in the design team",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "",
+        "category": "error",
+        "action": "",
+        "requirement": "",
+        "targets": "",
+        "magnitude": "",
+        "start_time": "",
+        "end_time": ""
+    },
+    {
+        "intent": "Push configuration files for IoT devices in the smart factory",
+        "category": "transfer",
+        "action": "push",
+        "requirement": null,
+        "targets": [
+            "IoT devices in the smart factory"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Ensure that upload speed is limited to 10mbps per device for devices connected to the dormitory network",
+        "category": "regulate",
+        "action": "limit",
+        "requirement": "upload speed",
+        "targets": "devices connected to the dormitory network",
+        "magnitude": "10mbps per device",
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "For workstations in the design team, push critical firmware updates",
+        "category": "transfer",
+        "action": "push",
+        "requirement": "critical firmware updates",
+        "targets": "workstations in the design team",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Ensure connections to online gaming environments is not accessible for enduser devices in the campus guest network",
+        "category": "regulate",
+        "action": "block",
+        "requirement": "online gaming environments",
+        "targets": "enduser devices in the campus guest network",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Prioritize traffic for online streaming services.",
+        "category": "regulate",
+        "action": "prioritize",
+        "requirement": null,
+        "targets": "online streaming services",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "",
+        "category": "error",
+        "action": "",
+        "requirement": "",
+        "targets": "",
+        "magnitude": "",
+        "start_time": "",
+        "end_time": ""
+    },
+    {
+        "intent": "Community forums and discussion boards should be denied for public devices on the common area networks",
+        "category": "regulate",
+        "action": "block",
+        "requirement": null,
+        "targets": "public devices on the common area networks",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Realtime streaming capabilities is supported by which of guest network devices",
+        "category": "construct",
+        "action": "discover",
+        "requirement": "capacidades de streaming em tempo real",
+        "targets": [
+            "devices supporting real-time streaming"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "IoT devices supporting dualband WiFi need to be identified",
+        "category": "construct",
+        "action": "discover",
+        "requirement": null,
+        "targets": "dispositivos IoT",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Log data transfer volumes associated with personal laptops in the faculty network",
+        "category": "construct",
+        "action": "discover",
+        "requirement": null,
+        "targets": [
+            "personal laptops in the faculty network"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Notify IoT devices in the room that a custom monitoring tools is ready",
+        "category": "construct",
+        "action": "advertise",
+        "requirement": "custom monitoring tool",
+        "targets": [
+            "IoT devices in the room"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Notify devices in the quality assurance lab that a system performance updates is ready",
+        "category": "transfer",
+        "action": "push",
+        "requirement": "system performance updates",
+        "targets": [
+            "devices in the quality assurance lab"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Deliver system performance updates for IoT devices in the smart factory",
+        "category": "transfer",
+        "action": "push",
+        "requirement": "system performance updates",
+        "targets": "IoT devices in the smart factory",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "What Smart Home Devices support HTTP/2 protocol?",
+        "category": "construct",
+        "action": "discover",
+        "requirement": null,
+        "targets": [
+            "multiple Smart Home Devices"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Let custom monitoring tools be known by compatible devices",
+        "category": "construct",
+        "action": "advertise",
+        "requirement": null,
+        "targets": "compat\u00edvel dispositivos",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "pull updated antivirus definitions from the workstations in the design team",
+        "category": "transfer",
+        "action": "pull",
+        "requirement": "updated antivirus definitions",
+        "targets": [
+            "workstations in the design team"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Let secure peer-to-peer file sharing service critical firmware updates be known by devices in the marketing department",
+        "category": "transfer",
+        "action": "push",
+        "requirement": "critical firmware updates for secure peer-to-peer file sharing service",
+        "targets": "devices in the marketing department",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Guest network devices supporting HTTP2 protocol need to be identified",
+        "category": "construct",
+        "action": "discover",
+        "requirement": "suporte ao protocolo HTTP2",
+        "targets": "dispositivos de rede de convidados",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Assign top priority for research lab computers.",
+        "category": "regulate",
+        "action": "prioritize",
+        "requirement": null,
+        "targets": "research lab computers",
+        "magnitude": "upload speed greater than 10mbps",
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Retrieve updated antivirus definitions from the cloud",
+        "category": "transfer",
+        "action": "pull",
+        "requirement": null,
+        "targets": null,
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "advertise the presence of configuration files to iot devices in the room",
+        "category": "construct",
+        "action": "advertise",
+        "requirement": "configura\u00e7\u00f5es de ficheiros",
+        "targets": "IoT devices in the room",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Throttle maximum bandwidth to a maximum of 80 mbps for guest wifi network",
+        "category": "regulate",
+        "action": "limit",
+        "requirement": null,
+        "targets": "guest WiFi network",
+        "magnitude": "80mbps",
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Push new application features to devices in the quality assurance lab",
+        "category": "transfer",
+        "action": "push",
+        "requirement": null,
+        "targets": [
+            "devices in the quality assurance lab"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Deliver updated antivirus definitions for all servers in the data center",
+        "category": "transfer",
+        "action": "push",
+        "requirement": null,
+        "targets": "all servers in the data center",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "List smart home devices configured for firewall configuration",
+        "category": "construct",
+        "action": "discover",
+        "requirement": "configura\u00e7\u00e3o de firewall",
+        "targets": [
+            "smart home devices"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "streaming services must have priority in the network, supply it with upload speed greater than 10mbps, streaming services should be given preference",
+        "category": "regulate",
+        "action": "prioritize",
+        "requirement": "upload speed greater than 10mbps",
+        "targets": "streaming services",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "For public devices on the common area networks, access to connections to online gaming environments must be denied",
+        "category": "regulate",
+        "action": "block",
+        "requirement": "online gaming environments",
+        "targets": "public devices on the common area networks",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "advertise the presence of system performance updates to compatible devices",
+        "category": "construct",
+        "action": "advertise",
+        "requirement": null,
+        "targets": "compatible devices",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Ensure system performance updates is sent to mobile devices in the logistics team",
+        "category": "transfer",
+        "action": "push",
+        "requirement": null,
+        "targets": [
+            "mobile devices in the logistics team"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Ensure that research lab computers have higher network priority by providing latency lower than 10ms",
+        "category": "regulate",
+        "action": "prioritize",
+        "requirement": null,
+        "targets": "research lab computers",
+        "magnitude": "latency lower than 10ms",
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Announce the availability of new application features on the all laptops used by remote workers",
+        "category": "transfer",
+        "action": "advertise",
+        "requirement": "new application features",
+        "targets": "all laptops used by remote workers",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Ensure that download and upload speed is limited for printers and scanners connected to the network",
+        "category": "regulate",
+        "action": "limit",
+        "requirement": "download and upload speed",
+        "targets": [
+            "printers",
+            "scanners"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Push custom monitoring tools to workstations in the design team",
+        "category": "transfer",
+        "action": "push",
+        "requirement": null,
+        "targets": "workstations in the design team",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Throttle upload speed to a maximum of 80 mbps for streaming services",
+        "category": "regulate",
+        "action": "limit",
+        "requirement": "upload speed",
+        "targets": null,
+        "magnitude": "80mbps",
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "push policy enforcement scripts to all laptops used by remote workers",
+        "category": "transfer",
+        "action": "push",
+        "requirement": "policy enforcement scripts",
+        "targets": [
+            "laptops used by remote workers"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Favor video conferencing traffic",
+        "category": "regulate",
+        "action": "prioritize",
+        "requirement": null,
+        "targets": "video conferencing traffic",
+        "magnitude": "higher priority",
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "for devices actively using the library internet service deny messaging and chat services",
+        "category": "regulate",
+        "action": "block",
+        "requirement": null,
+        "targets": "devices actively using the library internet service",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Ensure tracking of number of failed connection attempts for IoT devices across the campus",
+        "category": "regulate",
+        "action": "discover",
+        "requirement": null,
+        "targets": [
+            "IoT devices across the campus"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Prevent systems linked to the administrative LAN from accessing messaging and chat services",
+        "category": "regulate",
+        "action": "block",
+        "requirement": "messaging and chat services",
+        "targets": "systems linked to the administrative LAN",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Make sure upload speed is restricted for IoT device operations",
+        "category": "regulate",
+        "action": "limit",
+        "requirement": "upload speed for IoT devices",
+        "targets": "IoT devices",
+        "magnitude": "10kbps per device",
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Dual band WiFi is supported by which of mobile devices",
+        "category": "construct",
+        "action": "discover",
+        "requirement": null,
+        "targets": [
+            "many mobile devices"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "advertise the presence of system performance updates to devices in the quality assurance lab",
+        "category": "construct",
+        "action": "advertise",
+        "requirement": "system performance updates",
+        "targets": "devices in the quality assurance lab",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "For devices in the marketing department, push system performance updates",
+        "category": "transfer",
+        "action": "push",
+        "requirement": "system performance updates",
+        "targets": [
+            "devices in the marketing department"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Make guest WiFi network a priority",
+        "category": "regulate",
+        "action": "prioritize",
+        "requirement": null,
+        "targets": "guest WiFi network",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Critical firmware updates must be delivered to workstations in the design team",
+        "category": "transfer",
+        "action": "push",
+        "requirement": null,
+        "targets": "workstations in the design team",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "streaming services must have priority in the network supply it with download speed greater than 100mbps, streaming services should be given preference",
+        "category": "regulate",
+        "action": "prioritize",
+        "requirement": "download speed greater than 100mbps",
+        "targets": null,
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Assign top priority for research lab computers.",
+        "category": "regulate",
+        "action": "prioritize",
+        "requirement": null,
+        "targets": "IoT devices in the room",
+        "magnitude": "latency lower than 10ms",
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "For IoT devices integrated into the campus network, access to platforms hosting video streaming services must be denied",
+        "category": "regulate",
+        "action": "block",
+        "requirement": null,
+        "targets": "IoT devices in the campus network",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "for visitors accessing the conference room network access to filesharing and peer-to-peer systems must be denied",
+        "category": "regulate",
+        "action": "block",
+        "requirement": null,
+        "targets": "visitors on the conference room network",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Keep a record of duration of active sessions related to IoT devices across the campus",
+        "category": "construct",
+        "action": "discover",
+        "requirement": null,
+        "targets": [
+            "IoT devices",
+            "across the campus"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Policy enforcement scripts must be delivered to devices in the quality assurance lab",
+        "category": "transfer",
+        "action": "push",
+        "requirement": "policy enforcement scripts",
+        "targets": "devices in the quality assurance lab",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Pull latest software updates from the central media server",
+        "category": "transfer",
+        "action": "pull",
+        "requirement": null,
+        "targets": "central media server",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Ensure configuration files is sent to devices in the quality assurance lab",
+        "category": "transfer",
+        "action": "push",
+        "requirement": "configuration files",
+        "targets": "devices in the quality assurance lab",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Smart home devices supporting real-time streaming capabilities need to be identified",
+        "category": "construct",
+        "action": "discover",
+        "requirement": "capacidade de streamming em tempo real",
+        "targets": "dispositivos inteligentes residenciais",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Track number of failed connection attempts of devices connected to the dormitory network",
+        "category": "regulate",
+        "action": "monitor",
+        "requirement": null,
+        "targets": "devices connected to the dormitory network",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "new application features is to be pushed to workstations in the design team",
+        "category": "transfer",
+        "action": "push",
+        "requirement": null,
+        "targets": "workstations in the design team",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Guest network devices supporting WiFi 6 capability need to be identified",
+        "category": "construct",
+        "action": "discover",
+        "requirement": null,
+        "targets": "dispositivos de rede convidada que suportam WiFi 6",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "detect guest network devices that are compatible with HTTP/2 protocol",
+        "category": "construct",
+        "action": "discover",
+        "requirement": "compatibilidade com HTTP/2",
+        "targets": "dispositivos de redes de convidados",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Security patches must be fetched from the workstations in the design team",
+        "category": "transfer",
+        "action": "pull",
+        "requirement": "seguran\u00e7a",
+        "targets": [
+            "workstations in the design team"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "prevent IoT devices integrated into the campus network from accessing platforms hosting video streaming services",
+        "category": "regulate",
+        "action": "block",
+        "requirement": null,
+        "targets": "IoT devices integrated into the campus network",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Ensure that streaming services have higher network priority by providing download speed greater than 100mbps",
+        "category": "regulate",
+        "action": "prioritize",
+        "requirement": "download speed greater than 100mbps",
+        "targets": null,
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Detect smart home devices that are compatible with IPv6 protocol",
+        "category": "construct",
+        "action": "discover",
+        "requirement": "compatibilidade com o protocolo IPv6",
+        "targets": "dispositivos inteligentes de casa",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Identify all routers that support the IPv6 protocol",
+        "category": "construct",
+        "action": "discover",
+        "requirement": "protocolo IPv6",
+        "targets": null,
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Active SSH service is supported by which of smart home devices",
+        "category": "construct",
+        "action": "discover",
+        "requirement": null,
+        "targets": [
+            "smart home devices"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Throttle download speed to a maximum of 30 mbps for printers and scanners connected to the network",
+        "category": "regulate",
+        "action": "limit",
+        "requirement": "download speed",
+        "targets": "printers and scanners",
+        "magnitude": "30 mbps",
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Prevent public devices on the common area networks from accessing browsing of ecommerce platforms",
+        "category": "regulate",
+        "action": "block",
+        "requirement": "accessing browsing of ecommerce platforms",
+        "targets": "public devices on the common area networks",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Give precedence to printers and scanners connected to the network",
+        "category": "regulate",
+        "action": "prioritize",
+        "requirement": null,
+        "targets": "printers and scanners",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "IoT device operations must have priority in the network, supply it with latency lower than 10ms; IoT device operations should be given preference",
+        "category": "regulate",
+        "action": "prioritize",
+        "requirement": null,
+        "targets": "IoT devices",
+        "magnitude": "latency lower than 10ms",
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Network connected printers has the secure peer-to-peer file sharing service critical firmware updates request it",
+        "category": "transfer",
+        "action": "push",
+        "requirement": "critical firmware updates",
+        "targets": [
+            "printers"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "request network-connected printers has the latest software updates",
+        "category": "construct",
+        "action": "discover",
+        "requirement": "latest software updates",
+        "targets": "network-connected printers",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Critical firmware updates needs to be forwarded to devices in the quality assurance lab",
+        "category": "transfer",
+        "action": "push",
+        "requirement": "cr\u00edticas atualiza\u00e7\u00f5es de firmware",
+        "targets": [
+            "devices in the quality assurance lab"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "detect mobile devices that are compatible with real-time streaming capabilities",
+        "category": "construct",
+        "action": "discover",
+        "requirement": null,
+        "targets": "mobile devices",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Push updated antivirus definitions to mobile devices in the logistics team",
+        "category": "transfer",
+        "action": "push",
+        "requirement": null,
+        "targets": [
+            "mobile devices in the logistics team"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Pull configuration files from the workstations in the design team",
+        "category": "transfer",
+        "action": "pull",
+        "requirement": null,
+        "targets": [
+            "workstations in the design team"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "local network department has the configuration files request it",
+        "category": "transfer",
+        "action": "pull",
+        "requirement": null,
+        "targets": "configuration files for local network department",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "advertise the presence of updated antivirus definitions to mobile devices in the logistics team",
+        "category": "transfer",
+        "action": "advertise",
+        "requirement": "updated antivirus definitions",
+        "targets": "mobile devices in the logistics team",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "for workstations in the design team push system performance updates",
+        "category": "transfer",
+        "action": "push",
+        "requirement": null,
+        "targets": [
+            "workstations in the design team"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Ensure that video conferencing traffic have higher network priority by providing jitter lower than 20ms",
+        "category": "regulate",
+        "action": "prioritize",
+        "requirement": null,
+        "targets": null,
+        "magnitude": "jitter lower than 20ms",
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Browsing of ecommerce platforms should be denied for end-user devices in the campus guest network",
+        "category": "regulate",
+        "action": "block",
+        "requirement": "browsing ecommerce platforms",
+        "targets": "end-user devices in the campus guest network",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Network-connected printers has the new application features request it",
+        "category": "construct",
+        "action": "discover",
+        "requirement": null,
+        "targets": "printers",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Community forums and discussion boards should be denied for computers operating within the dormitory wifi",
+        "category": "regulate",
+        "action": "block",
+        "requirement": "community forums and discussion boards",
+        "targets": "computers operating within the dormitory wifi",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Track duration of active sessions of personal laptops in the faculty network",
+        "category": "regulate",
+        "action": "discover",
+        "requirement": null,
+        "targets": "personal laptops in the faculty network",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Ensure sites used for torrent downloads is not accessible for computers operating within the dormitory wifi",
+        "category": "regulate",
+        "action": "block",
+        "requirement": "sites used for torrent downloads",
+        "targets": "computers operating within the dormitory wifi",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "printers and scanners connected to the network must be limited to 30 mbps apply this to printers and scanners connected to the networkupload speed should be limited to 30 mbps for printers and scanners connected to the network",
+        "category": "regulate",
+        "action": "limit",
+        "requirement": null,
+        "targets": "printers and scanners connected to the network",
+        "magnitude": "30mbps",
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Pinpoint LAN endpoints with compatibility for WiFi 6 capability",
+        "category": "construct",
+        "action": "discover",
+        "requirement": "compatibilidade com WiFi 6",
+        "targets": null,
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Ensure that upload speed is limited to 80 mbps for laptops used by employees",
+        "category": "regulate",
+        "action": "limit",
+        "requirement": "upload speed to 80 mbps",
+        "targets": "laptops used by employees",
+        "magnitude": "80mbps",
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Monitor number of failed connection attempts for personal laptops in the faculty network",
+        "category": "construct",
+        "action": "discover",
+        "requirement": null,
+        "targets": "personal laptops in the faculty network",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Assign top priority for laptops used by employees",
+        "category": "regulate",
+        "action": "prioritize",
+        "requirement": null,
+        "targets": "laptops used by employees",
+        "magnitude": "latency lower than 10ms",
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "detect guest network devices that are compatible with WiFi 6 capability",
+        "category": "construct",
+        "action": "discover",
+        "requirement": null,
+        "targets": "dispositivos de redes de convidados compat\u00edveis com WiFi 6",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Let workstations in the design team know that security patches is available.",
+        "category": "transfer",
+        "action": "push",
+        "requirement": "security patches",
+        "targets": "workstations in the design team",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Community forums and discussion boards should be denied for IoT devices integrated into the campus network",
+        "category": "regulate",
+        "action": "block",
+        "requirement": null,
+        "targets": "IoT devices integrated into the campus network",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Ensure that devices in the conference room network have higher network priority by providing jitter lower than 20ms",
+        "category": "regulate",
+        "action": "prioritize",
+        "requirement": null,
+        "targets": "devices in the conference room network",
+        "magnitude": "jitter lower than 20ms",
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "List IoT devices configured for VPN compatibility",
+        "category": "construct",
+        "action": "discover",
+        "requirement": null,
+        "targets": [
+            "IoT devices"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Monitor traffic volume for printers and scanners connected to the network",
+        "category": "construct",
+        "action": "discover",
+        "requirement": null,
+        "targets": [
+            "printers",
+            "scanners"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "platforms hosting video streaming services should be denied for public devices on the common area networks",
+        "category": "regulate",
+        "action": "block",
+        "requirement": null,
+        "targets": "public devices on the common area networks",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Duration of active sessions for research lab computers must be tracked",
+        "category": "regulate",
+        "action": "track",
+        "requirement": null,
+        "targets": "active sessions for research lab computers",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Monitor number of failed connection attempts for guest WiFi network",
+        "category": "construct",
+        "action": "discover",
+        "requirement": null,
+        "targets": [
+            "guest WiFi network"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Push custom monitoring tools to IoT devices in the smart factory",
+        "category": "transfer",
+        "action": "push",
+        "requirement": null,
+        "targets": [
+            "IoT devices in the smart factory"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "List mobile devices configured for VPN compatibility",
+        "category": "construct",
+        "action": "discover",
+        "requirement": "compatibilidade com VPN",
+        "targets": " dispositivos m\u00f3veis",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "advertise the presence of custom monitoring tools to IoT devices in the room",
+        "category": "construct",
+        "action": "advertise",
+        "requirement": null,
+        "targets": [
+            "IoT devices in the room"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Monitor upload and download speeds per device for personal laptops in the faculty network",
+        "category": "regulate",
+        "action": "discover",
+        "requirement": "upload and download speeds per device",
+        "targets": "personal laptops in the faculty network",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Ensure that upload speed is limited to 30 mbps for devices in the conference room network",
+        "category": "regulate",
+        "action": "limit",
+        "requirement": "upload speed to 30mbps",
+        "targets": "devices in the conference room network",
+        "magnitude": "30mbps",
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "List switches that support real-time streaming capabilities",
+        "category": "construct",
+        "action": "discover",
+        "requirement": "capacidades de streaming em tempo real",
+        "targets": "todos os switces",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "New application features need to be forwarded to all servers in the data center",
+        "category": "transfer",
+        "action": "push",
+        "requirement": "new application features",
+        "targets": [
+            "all servers in the data center"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "for devices actively using the library internet service access to websites containing explicit content must be denied",
+        "category": "regulate",
+        "action": "block",
+        "requirement": "websites containing explicit content",
+        "targets": "devices actively using the library internet service",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Ensure that upload speed is limited to 50mbps per device for streaming services",
+        "category": "regulate",
+        "action": "limit",
+        "requirement": "upload speed for streaming services",
+        "targets": "devices for streaming services",
+        "magnitude": "50mbps per device",
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Pinpoint LAN endpoints with compatibility for HTTP/2 protocol",
+        "category": "construct",
+        "action": "discover",
+        "requirement": "compatibilidade com o protocolo HTTP/2",
+        "targets": "fim de rede local (LAN) compat\u00edveis com HTTP/2",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "throttle background synchronization to a maximum of 10mbps per device for devices connected to the dormitory network",
+        "category": "regulate",
+        "action": "limit",
+        "requirement": null,
+        "targets": "devices connected to the dormitory network",
+        "magnitude": "10mbps per device",
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "throttle maximum bandwidth to a maximum of 80 mbps for devices in the conference room network",
+        "category": "regulate",
+        "action": "limit",
+        "requirement": "maximum bandwidth",
+        "targets": "devices in the conference room network",
+        "magnitude": "80mbps",
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Request the new application features from cloud",
+        "category": "construct",
+        "action": "discover",
+        "requirement": null,
+        "targets": "new application features",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Filesharing and peer-to-peer systems should be denied for devices actively using the library internet service",
+        "category": "regulate",
+        "action": "block",
+        "requirement": null,
+        "targets": "devices actively using the library internet service",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Let new application features be known by workstations in the design team",
+        "category": "transfer",
+        "action": "advertise",
+        "requirement": null,
+        "targets": "workstations in the design team",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Request the configuration files from IoT devices",
+        "category": "construct",
+        "action": "pull",
+        "requirement": null,
+        "targets": [
+            "IoT devices"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Duration of active sessions associated with guest WiFi network needs to be tracked",
+        "category": "construct",
+        "action": "discover",
+        "requirement": null,
+        "targets": "active sessions on the guest WiFi network",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "request the latest software updates from central media server",
+        "category": "transfer",
+        "action": "pull",
+        "requirement": null,
+        "targets": "central media server",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Track real-time data throughput per device of printers and scanners connected to the network",
+        "category": "construct",
+        "action": "discover",
+        "requirement": null,
+        "targets": [
+            "printers",
+            "scanners"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "List guest network devices configured for HTTP2 protocol",
+        "category": "construct",
+        "action": "discover",
+        "requirement": "protocolo HTTP2",
+        "targets": "dispositivos de redes de convidados configurados para HTTP2",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Request the custom monitoring tools from cloud",
+        "category": "transfer",
+        "action": "pull",
+        "requirement": null,
+        "targets": "custom monitoring tools from cloud",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Pull secure peer-to-peer file sharing service critical firmware updates from IoT devices",
+        "category": "transfer",
+        "action": "pull",
+        "requirement": "critical firmware updates",
+        "targets": "IoT devices",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "For computers operating within the dormitory, wifi access to platforms hosting video streaming services must be denied",
+        "category": "regulate",
+        "action": "block",
+        "requirement": "video streaming services",
+        "targets": "computers operating within the dormitory",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Ensure that devices in the conference room network have higher network priority by providing upload speed greater than 10mbps",
+        "category": "regulate",
+        "action": "prioritize",
+        "requirement": null,
+        "targets": "devices in the conference room network",
+        "magnitude": "upload speed greater than 10mbps",
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Ensure that streaming services have higher network priority by providing jitter lower than 20ms",
+        "category": "regulate",
+        "action": "prioritize",
+        "requirement": null,
+        "targets": "streaming services",
+        "magnitude": "jitter lower than 20ms",
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "advertise the presence of security patches to devices in the quality assurance lab",
+        "category": "transfer",
+        "action": "advertise",
+        "requirement": "security patches",
+        "targets": [
+            "devices in the quality assurance lab"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Let updated antivirus definitions be known by compatible devices",
+        "category": "transfer",
+        "action": "push",
+        "requirement": "atualiza\u00e7\u00f5es de defini\u00e7\u00f5es de antiv\u00edrus",
+        "targets": null,
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Pinpoint mobile devices with compatibility for IPv6 protocol",
+        "category": "construct",
+        "action": "discover",
+        "requirement": "compatibilidade com protocolo IPv6",
+        "targets": null,
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "connections to online gaming environments should be denied for public devices on the common area networks",
+        "category": "regulate",
+        "action": "block",
+        "requirement": null,
+        "targets": "public devices on the common area networks",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Cap the background synchronization to 30 mbps for streaming services",
+        "category": "regulate",
+        "action": "limit",
+        "requirement": "background synchronization",
+        "targets": null,
+        "magnitude": "30mbps",
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Assign top priority for research lab computers and monitor their active session duration.",
+        "category": "regulate",
+        "action": "prioritize",
+        "requirement": null,
+        "targets": "research lab computers",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "for public devices on the common area networks access to browsing of ecommerce platforms must be denied",
+        "category": "regulate",
+        "action": "block",
+        "requirement": "access to browsing of ecommerce platforms",
+        "targets": "public devices on the common area networks",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "New application features is to be pushed to all laptops used by remote workers",
+        "category": "transfer",
+        "action": "push",
+        "requirement": null,
+        "targets": [
+            "all laptops used by remote workers"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "push bug fixes for existing software to IoT devices in the smart factory",
+        "category": "transfer",
+        "action": "push",
+        "requirement": "bug fixes",
+        "targets": [
+            "IoT devices in the smart factory"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "advertise the presence of updated antivirus definitions to all laptops used by remote workers",
+        "category": "construct",
+        "action": "advertise",
+        "requirement": "updated antivirus definitions",
+        "targets": [
+            "all laptops used by remote workers"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Give precedence to devices in the conference room network",
+        "category": "regulate",
+        "action": "prioritize",
+        "requirement": null,
+        "targets": "devices in the conference room network",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Mobile phones in the student network should have its number of failed connection attempts monitored",
+        "category": "regulate",
+        "action": "monitor",
+        "requirement": null,
+        "targets": "mobile phones in the student network",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "advertise the presence of bug fixes for existing software to workstations in the design team",
+        "category": "construct",
+        "action": "advertise",
+        "requirement": "bug fixes",
+        "targets": [
+            "workstations in the design team"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Request the latest software updates for cloud",
+        "category": "construct",
+        "action": "push",
+        "requirement": "latest software updates",
+        "targets": null,
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "new application features has to be retrieved from compatible devices",
+        "category": "construct",
+        "action": "discover",
+        "requirement": null,
+        "targets": "compat\u00edvel dispositivos",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Laptops used by employees must have priority in the network, supply it with jitter lower than 20ms. Laptops used by employees should be given preference",
+        "category": "regulate",
+        "action": "prioritize",
+        "requirement": null,
+        "targets": "laptops used by employees",
+        "magnitude": "jitter lower than 20ms",
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Identify IoT devices supporting IPv6 protocol",
+        "category": "construct",
+        "action": "discover",
+        "requirement": "suporte ao protocolo IPv6",
+        "targets": [
+            "IoT devices"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Retrieve updated antivirus definitions from the central media server",
+        "category": "transfer",
+        "action": "pull",
+        "requirement": null,
+        "targets": null,
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Request new application features from local network department",
+        "category": "construct",
+        "action": "discover",
+        "requirement": null,
+        "targets": "local network department",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Throttle minimum bandwidth to a maximum of 80 mbps for devices connected to the dormitory network",
+        "category": "regulate",
+        "action": "limit",
+        "requirement": "minimum bandwidth to a maximum of 80 mbps",
+        "targets": "devices connected to the dormitory network",
+        "magnitude": "80mbps",
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Detect smart home devices that are compatible with firewall configuration",
+        "category": "construct",
+        "action": "discover",
+        "requirement": "compliant with firewall configuration",
+        "targets": [
+            "smart home devices"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Duration of active sessions associated with devices connected to the dormitory network needs to be tracked",
+        "category": "regulate",
+        "action": "discover",
+        "requirement": null,
+        "targets": "devices connected to the dormitory network",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "IOT devices across the campus should have its number of failed connection attempts monitored",
+        "category": "construct",
+        "action": "discover",
+        "requirement": null,
+        "targets": [
+            "IoT devices across the campus"
+        ],
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Let workstations in the design team know that updated antivirus definitions is available.",
+        "category": "transfer",
+        "action": "push",
+        "requirement": "updated antivirus definitions",
+        "targets": "workstations in the design team",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "log duration of active sessions associated with personal laptops in the faculty network",
+        "category": "regulate",
+        "action": "discover",
+        "requirement": null,
+        "targets": "personal laptops in the faculty network",
+        "magnitude": null,
+        "start_time": "now",
+        "end_time": null
+    },
+    {
+        "intent": "Identify IoT devices supporting VPN compatibility",
+        "category": "construct",
+        "action": "discover",
+        "requirement": null,
+        "targets": "IoT devices",
         "magnitude": null,
         "start_time": "now",
         "end_time": null

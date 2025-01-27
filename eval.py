@@ -111,7 +111,7 @@ def evaluation_llms(test_file_path, test_size, model_name, current_model):
     metrics_action = calculateMetrics(output_set['action'], test_set['action'], 'action')
     media_acertos_action = media_por_label(test_set.head(test_size), output_set.head(test_size), 'action')
     # Junta as metricas com a media de acerto e salva
-    results = [{'intents': {test_size}}] + metrics_categoria + media_acertos_categoria + metrics_action + media_acertos_action
+    results = [{'intents': test_size}] + metrics_categoria + media_acertos_categoria + metrics_action + media_acertos_action
     file_path = f"./results/{model_name}/{current_model}.json"
     save_results(file_path, results)
     

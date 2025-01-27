@@ -24,7 +24,7 @@ def save_test_shuffled(test_set):
     with open("eval-data/test_recente.json", "w") as f:
         f.write(test_json)
 
-def save_results(file, test_size, results):
+def save_results(file, results):
     directory = os.path.dirname(file)
     if not os.path.exists(directory):
         os.makedirs(directory)

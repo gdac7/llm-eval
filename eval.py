@@ -99,17 +99,18 @@ def media_por_label(teste, output,target_label):
     return [media]
 
 
-def evaluation_llms(test_file_path, test_size, modelName):
+def evaluation_llms(test_file_path, test_size, model_name, current_model):
     test_size = 15
     test_set = get_test_set(test_file_path)
     save_test_shuffled(test_set.head(test_size))
-    output_set = newReq(test_set.head(test_size), modelName)
+    output_set = newReq(test_set.head(test_size), model_name)
     label_for_metrics = 'category'
     metrics = calculateMetrics(output_set[label_for_metrics], test_set[label_for_metrics], label_for_metrics)
     media_acertos = media_por_label(test_set.head(test_size), output_set.head(test_size), 'category')
-    results = metrics + media_acertos
     # Junta as metricas com a media de acerto e salva
-    save_results(results)
+    results = [{'intents': {test_size}}] + metrics + media_acertos
+    file_path = f"./results/{model_name}/{current_model}.json"
+    save_results(file_path, results)
     
 
 

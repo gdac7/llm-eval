@@ -6,31 +6,7 @@ from tqdm import tqdm
 from langchain_ollama import OllamaLLM
 import pandas as pd
 import json
-import os
-
-def save_test_shuffled(test_set):
-    test_json = test_set.to_json(orient="records", indent=4)
-    with open("eval-data/test_recente.json", "w") as f:
-        f.write(test_json)
-
-def save_results(file, test_size, acc_class, acc_category, acc_fuzzy):
-    directory = os.path.dirname(file)
-    if not os.path.exists(directory):
-        os.makedirs(directory)
-    with open(file, 'a') as f:
-        f.write(f"##Intenções testadas: {test_size}\n")
-        f.write(f"  Acurácia por classe (label): \n{acc_class}\n\n")
-        f.write(f"  Acurácia por categoria: \n{acc_category}\n\n")
-        f.write(f"  Acurácia com fuzzy: \n{acc_fuzzy}\n\n")
-
-
-def get_test_set(test_path):
-    test_set =  pd.read_json(test_path)
-    test_set = test_set.sample(frac=1).reset_index(drop=True)
-    test_set = test_set.fillna("")
-    test_set = test_set.astype(str)
-    return test_set
-
+from utils import *
 
 def newReq(input_df, model):
     columns = ["intent", "category", "action", "requirement",
@@ -55,71 +31,86 @@ def newReq(input_df, model):
             output_data[-1]['category'] = "error"
 
     output_df = pd.DataFrame(output_data)
-    output_df = output_df.fillna("").astype(str).applymap(lambda x: x.lower())
-    output_df = output_df.drop(columns=['start_time', 'end_time'])
-
+    output_df = pre_process_data(output_df)
     with open('eval-data/output_recente.json', 'w') as f:
         json.dump(output_data, f, indent=4)
 
     return output_df
 
+def calcularResultados(tp, fp, fn, tn):
+    precision = round(tp / (tp + fp) if (tp + fp) > 0 else 0, 4)
+    recall = round(tp / (tp + fn) if (tp + fn) > 0 else 0, 4)
+    f1 = round(2 * (precision * recall) / (precision + recall) if (precision + recall) > 0 else 0, 4)
+    # acuracia para essa classe em questão. Total de acertos / total de exemplos
+    # Se ele preveu que não era e realmente não era, também é acerto!
+    accuracy = round((tp + fn) / (tp + fp + fn + tn) if (tp + fp + fn + tn) > 0 else 0, 4)
+
+    return precision, recall, f1, accuracy
 
 
-
-
-def calcularResultados(tp, fp, fn):
-    try:
-        precision = (tp) / (tp + fp)
-    except ZeroDivisionError:
-        precision = 0
-    try:
-        recall = (tp) / (tp + fn)
-    except ZeroDivisionError:
-        recall = 0
-    try:
-        f1 = 2*((precision * recall) / (precision + recall))
-    except ZeroDivisionError:
-        f1 = 0
-    return precision, recall, f1
-
-
-def calculateMetricsCategory(pred_categorias, test_categorias):
-    unique_categories = set(pred_categorias).union(set(test_categorias))
+def calculateMetrics(pred_label, test_label, target_label):
+    """
+    Calcula métricas precisao, revocação, f1 e acurácia para o label 'category' ou 'action'
+    """
+    unique_labels = set(pred_label).union(set(test_label))
     results = []
-    for category in unique_categories:
+    for label in unique_labels:
         # Condições para cada métrica
-        tp = float(((pred_categorias == category) & (test_categorias == category)).sum())
-        fp = float(((pred_categorias == category) & (test_categorias != category)).sum())
-        fn = float(((pred_categorias != category) & (test_categorias == category)).sum())
-        precision, recall, f1 = calcularResultados(tp, fp, fn)        
+        # True Positive: previu a categoria e era a categoria
+        tp = float(((pred_label == label) & (test_label == label)).sum())
+        # False Positive: previu a categoria e não era
+        fp = float(((pred_label == label) & (test_label != label)).sum())
+        # False Negative: não previu a categoria, mas de fato era
+        fn = float(((pred_label != label) & (test_label == label)).sum())
+        # True Negatives: não previu a categoria e de fato não era
+        tn = float(((pred_label != label) & (test_label != label)).sum())
+
+        precision, recall, f1, accuracy = calcularResultados(tp, fp, fn, tn)
         new_json = {
-            'category': category,
-            'precision': f"{precision:.2f}",
-            'recall': f"{recall:.2f}",
-            'f1-score': f"{f1:.2f}",
+            target_label: label,
+            'precision': precision,
+            'recall': recall,
+            'f1-score': f1,
+            'accuracy': accuracy,
         }
         results.append(new_json)
-
     return results
 
 
-def calculateMetricsAction(test_set, output_set):
-    pass
+
+
+def media_por_label(teste, output,target_label):
+    """
+    Essa função faz o mesmo que a função "media_por_categoria" usada no repo 'llm_evaluation'
+    Porém mais flexível, podendo ser usada para calcular o quanto que, para cada action ou category, o LLM acerta os outros paramêtros
+    """
+    unique_labels = set(output[target_label]).union(set(teste[target_label]))
+    media = {label: 0 for label in unique_labels}
+    total_labels = len(teste.columns)
+    for label in unique_labels:
+        indices = output[output[target_label] == label].index
+        linhas_label_teste = teste.loc[indices]
+        linhas_label_output = output.loc[indices]
+        for (_, row_test), (_, row_out) in zip(linhas_label_teste.iterrows(), linhas_label_output.iterrows()):
+            acertos = sum(val_test == val_out for val_test, val_out in zip(row_test.values, row_out.values))/total_labels
+            media[label] += acertos
+        media[label] = round(media[label] / len(linhas_label_output), 4)
+    
+    return [media]
+
 
 def evaluation_llms(test_file_path, test_size, modelName):
-    # Usar os arquivos salvos para testar
-    # output_set = pd.read_json("eval-data/output_recente.json")
-    # output_set = output_set.fillna("").astype(str).applymap(lambda x: x.lower())
-    # output_set = output_set.drop(columns=['start_time', 'end_time'])
-    # test_set = pd.read_json("./eval-data/test_recente.json")
     test_size = 15
     test_set = get_test_set(test_file_path)
-    intents = pd.DataFrame(test_set['intent'])
     save_test_shuffled(test_set.head(test_size))
-    # Para podermos verificar como o modelo se comporta conforme aumentamos os
-    output_set = newReq(intents.head(test_size), modelName)
-    metrics_cat = calculateMetricsCategory(output_set['category'], test_set['category'])
-    print(metrics_cat)
+    output_set = newReq(test_set.head(test_size), modelName)
+    label_for_metrics = 'category'
+    metrics = calculateMetrics(output_set[label_for_metrics], test_set[label_for_metrics], label_for_metrics)
+    media_acertos = media_por_label(test_set.head(test_size), output_set.head(test_size), 'category')
+    results = metrics + media_acertos
+    # Junta as metricas com a media de acerto e salva
+    save_results(results)
+    
 
 
 

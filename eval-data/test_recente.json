@@ -1,70 +1,46 @@
 [
     {
-        "intent":"configuration files has to be retrieved from central media server.",
-        "category":"transfer",
-        "action":"pull",
-        "requirement":"configuration files",
-        "targets":"central media server",
-        "magnitude":""
-    },
-    {
-        "intent":"Pull custom monitoring tools from the local network department.",
-        "category":"transfer",
-        "action":"pull",
-        "requirement":"custom monitoring tools",
-        "targets":"local network department",
-        "magnitude":""
-    },
-    {
-        "intent":"For IoT devices integrated into the campus network, access to platforms hosting video streaming services must be denied.",
-        "category":"regulate",
-        "action":"block",
-        "requirement":"platforms hosting video streaming services",
-        "targets":"IoT devices integrated into the campus network",
-        "magnitude":""
-    },
-    {
-        "intent":"guest Wi-Fi network should have its packet loss rates monitored.",
+        "intent":"ensure tracking of upload and download speeds per device for personal laptops in the faculty network",
         "category":"regulate",
         "action":"monitor",
-        "requirement":"packet loss rates",
-        "targets":"guest Wi-Fi network",
-        "magnitude":""
-    },
-    {
-        "intent":"Keep a record of real-time data throughput per device related to personal laptops in the faculty network.",
-        "category":"regulate",
-        "action":"monitor",
-        "requirement":"real-time data throughput per device",
+        "requirement":"upload and download speeds per device",
         "targets":"personal laptops in the faculty network",
         "magnitude":""
     },
     {
-        "intent":"Identify mobile devices supporting VPN compatibility",
-        "category":"construct",
-        "action":"discover",
-        "requirement":"VPN compatibility",
-        "targets":"mobile devices",
+        "intent":"iot device operations must be limited to 30 mbps apply this to iot device operationsminimum bandwidth should be limited to 30 mbps for iot device operations",
+        "category":"regulate",
+        "action":"limit",
+        "requirement":"minimum bandwidth",
+        "targets":"iot device operations",
+        "magnitude":"30 mbps"
+    },
+    {
+        "intent":"for public devices on the common area networks access to websites containing explicit content must be denied",
+        "category":"regulate",
+        "action":"block",
+        "requirement":"websites containing explicit content",
+        "targets":"public devices on the common area networks",
         "magnitude":""
     },
     {
-        "intent":"Notify devices in the quality assurance lab that a secure peer-to-peer file sharing servicecritical firmware updates is ready.",
+        "intent":"notify devices in the marketing department that a configuration files is ready",
         "category":"construct",
         "action":"advertise",
-        "requirement":"secure peer-to-peer file sharing servicecritical firmware updates",
-        "targets":"devices in the quality assurance lab",
+        "requirement":"configuration files",
+        "targets":"devices in the marketing department",
         "magnitude":""
     },
     {
-        "intent":"real-time data throughput per device associated with research lab computers needs to be tracked.",
-        "category":"regulate",
-        "action":"monitor",
-        "requirement":"real-time data throughput per device",
-        "targets":"research lab computers",
+        "intent":"for iot devices in the smart factory push configuration files",
+        "category":"transfer",
+        "action":"push",
+        "requirement":"configuration files",
+        "targets":"iot devices in the smart factory",
         "magnitude":""
     },
     {
-        "intent":"streaming services must have priority in the network, supply it with download speed greater than 100mbpsstreaming services should be given preference.",
+        "intent":"streaming services must have priority in the network supply it with download speed greater than 100mbpsstreaming services should be given preference",
         "category":"regulate",
         "action":"prioritize",
         "requirement":"",
@@ -72,51 +48,75 @@
         "magnitude":"download speed greater than 100mbps"
     },
     {
-        "intent":"For devices connected via the staff-only network, access to community forums and discussion boards must be denied.",
+        "intent":"give preference to streaming services",
         "category":"regulate",
-        "action":"block",
-        "requirement":"community forums and discussion boards",
-        "targets":"devices connected via the staff-only network",
-        "magnitude":""
+        "action":"prioritize",
+        "requirement":"",
+        "targets":"streaming services",
+        "magnitude":"latency lower than 10ms"
     },
     {
-        "intent":"Detect IoT devices that are compatible with firewall configuration.",
-        "category":"construct",
-        "action":"discover",
-        "requirement":"firewall configuration",
-        "targets":"IoT devices",
-        "magnitude":""
+        "intent":"give preference to research lab computers",
+        "category":"regulate",
+        "action":"prioritize",
+        "requirement":"",
+        "targets":"research lab computers",
+        "magnitude":"latency lower than 10ms"
     },
     {
-        "intent":"Request the configuration files from IoT devices.",
+        "intent":"video conferencing traffic must have priority in the network supply it with upload speed greater than 10mbpsvideo conferencing traffic should be given preference",
+        "category":"regulate",
+        "action":"prioritize",
+        "requirement":"",
+        "targets":"video conferencing traffic",
+        "magnitude":"upload speed greater than 10mbps"
+    },
+    {
+        "intent":"secure peertopeer file sharing servicecritical firmware updates must be fetched from the cloud",
         "category":"transfer",
         "action":"pull",
-        "requirement":"configuration files",
-        "targets":"IoT devices",
-        "magnitude":""
-    },
-    {
-        "intent":"Track duration of active sessions of guest Wi-Fi network.",
-        "category":"regulate",
-        "action":"monitor",
-        "requirement":"duration of active sessions",
-        "targets":"guest Wi-Fi network",
-        "magnitude":""
-    },
-    {
-        "intent":"Request the system performance updates from cloud.",
-        "category":"transfer",
-        "action":"pull",
-        "requirement":"system performance updates",
+        "requirement":"secure peertopeer file sharing servicecritical firmware updates",
         "targets":"cloud",
         "magnitude":""
     },
     {
-        "intent":"Detect IoT devices that are compatible with HTTP\/2 protocol.",
+        "intent":"advertise the presence of bug fixes for existing software to compatible devices",
+        "category":"construct",
+        "action":"advertise",
+        "requirement":"bug fixes for existing software",
+        "targets":"compatible devices",
+        "magnitude":""
+    },
+    {
+        "intent":"throttle download and upload speed to a maximum of 30 mbps for devices connected to the dormitory network",
+        "category":"regulate",
+        "action":"limit",
+        "requirement":"download and upload speed",
+        "targets":"devices connected to the dormitory network",
+        "magnitude":"30 mbps"
+    },
+    {
+        "intent":"guest wifi network needs to be prioritized",
+        "category":"regulate",
+        "action":"prioritize",
+        "requirement":"",
+        "targets":"guest wifi network",
+        "magnitude":"latency lower than 10ms"
+    },
+    {
+        "intent":"wifi clients supporting vpn compatibility need to be identified",
         "category":"construct",
         "action":"discover",
-        "requirement":"HTTP\/2 protocol",
-        "targets":"IoT devices",
+        "requirement":"vpn compatibility",
+        "targets":"wifi clients",
         "magnitude":""
+    },
+    {
+        "intent":"make video conferencing traffic a priority",
+        "category":"regulate",
+        "action":"prioritize",
+        "requirement":"",
+        "targets":"video conferencing traffic",
+        "magnitude":"latency lower than 10ms"
     }
 ]

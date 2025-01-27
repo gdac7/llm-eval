@@ -79,13 +79,15 @@ def calculateMetrics(pred_label, test_label, target_label):
 
 
 
-def media_por_label(teste, output,target_label):
+def media_por_label(teste, output, target_label):
     """
     Essa função faz o mesmo que a função "media_por_categoria" usada no repo 'llm_evaluation'
     Porém mais flexível, podendo ser usada para calcular o quanto que, para cada action ou category, o LLM acerta os outros paramêtros
     """
     unique_labels = set(output[target_label]).union(set(teste[target_label]))
     media = {label: 0 for label in unique_labels}
+    media['evaluation'] = "avg accuracy of parameters"
+    media['label'] = target_label
     total_labels = len(teste.columns)
     for label in unique_labels:
         indices = output[output[target_label] == label].index
@@ -95,20 +97,21 @@ def media_por_label(teste, output,target_label):
             acertos = sum(val_test == val_out for val_test, val_out in zip(row_test.values, row_out.values))/total_labels
             media[label] += acertos
         media[label] = round(media[label] / len(linhas_label_output), 4)
-    
+    media['label'] = target_label
     return [media]
 
 
 def evaluation_llms(test_file_path, test_size, model_name, current_model):
-    test_size = 15
     test_set = get_test_set(test_file_path)
     save_test_shuffled(test_set.head(test_size))
-    output_set = newReq(test_set.head(test_size), model_name)
-    label_for_metrics = 'category'
-    metrics = calculateMetrics(output_set[label_for_metrics], test_set[label_for_metrics], label_for_metrics)
-    media_acertos = media_por_label(test_set.head(test_size), output_set.head(test_size), 'category')
+    output_set = newReq(test_set.head(test_size), current_model)
+    
+    metrics_categoria = calculateMetrics(output_set['category'], test_set['category'], 'category')
+    media_acertos_categoria = media_por_label(test_set.head(test_size), output_set.head(test_size), 'category')
+    metrics_action = calculateMetrics(output_set['action'], test_set['action'], 'action')
+    media_acertos_action = media_por_label(test_set.head(test_size), output_set.head(test_size), 'action')
     # Junta as metricas com a media de acerto e salva
-    results = [{'intents': {test_size}}] + metrics + media_acertos
+    results = [{'intents': {test_size}}] + metrics_categoria + media_acertos_categoria + metrics_action + media_acertos_action
     file_path = f"./results/{model_name}/{current_model}.json"
     save_results(file_path, results)
     

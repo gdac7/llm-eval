@@ -1,0 +1,133 @@
+[
+    {
+        "intents": 500
+    },
+    {
+        "category": "transfer",
+        "precision": 0.7092,
+        "recall": 0.7937,
+        "f1-score": 0.7491,
+        "accuracy": 0.252
+    },
+    {
+        "category": "regulate",
+        "precision": 1.0,
+        "recall": 0.7992,
+        "f1-score": 0.8884,
+        "accuracy": 0.498
+    },
+    {
+        "category": "error",
+        "precision": 0.0,
+        "recall": 0,
+        "f1-score": 0,
+        "accuracy": 0.0
+    },
+    {
+        "category": "construct",
+        "precision": 0.5845,
+        "recall": 0.664,
+        "f1-score": 0.6217,
+        "accuracy": 0.25
+    },
+    {
+        "transfer": 0.779,
+        "regulate": 0.8116,
+        "error": 0.1667,
+        "construct": 0.7042,
+        "evaluation": "avg accuracy of parameters",
+        "label": "category"
+    },
+    {
+        "action": "track",
+        "precision": 0.0,
+        "recall": 0,
+        "f1-score": 0,
+        "accuracy": 0.0
+    },
+    {
+        "action": "push",
+        "precision": 0.6778,
+        "recall": 0.9683,
+        "f1-score": 0.7974,
+        "accuracy": 0.126
+    },
+    {
+        "action": "prioritize",
+        "precision": 0.9483,
+        "recall": 0.8871,
+        "f1-score": 0.9167,
+        "accuracy": 0.124
+    },
+    {
+        "action": "monitor",
+        "precision": 1.0,
+        "recall": 0.1587,
+        "f1-score": 0.2739,
+        "accuracy": 0.126
+    },
+    {
+        "action": "limit",
+        "precision": 0.9531,
+        "recall": 0.9839,
+        "f1-score": 0.9683,
+        "accuracy": 0.124
+    },
+    {
+        "action": "block",
+        "precision": 0.9841,
+        "recall": 1.0,
+        "f1-score": 0.992,
+        "accuracy": 0.124
+    },
+    {
+        "action": "pull",
+        "precision": 1.0,
+        "recall": 0.619,
+        "f1-score": 0.7647,
+        "accuracy": 0.126
+    },
+    {
+        "action": "deliver",
+        "precision": 0.0,
+        "recall": 0,
+        "f1-score": 0,
+        "accuracy": 0.0
+    },
+    {
+        "action": "advertise",
+        "precision": 0.8889,
+        "recall": 0.6452,
+        "f1-score": 0.7477,
+        "accuracy": 0.124
+    },
+    {
+        "action": "discover",
+        "precision": 0.5701,
+        "recall": 0.9683,
+        "f1-score": 0.7177,
+        "accuracy": 0.126
+    },
+    {
+        "action": "request",
+        "precision": 0.0,
+        "recall": 0,
+        "f1-score": 0,
+        "accuracy": 0.0
+    },
+    {
+        "track": 0.625,
+        "push": 0.7704,
+        "prioritize": 0.8017,
+        "monitor": 0.7,
+        "limit": 0.7604,
+        "block": 0.8968,
+        "pull": 0.8162,
+        "deliver": 0.6667,
+        "advertise": 0.7667,
+        "discover": 0.6854,
+        "request": 0.5,
+        "evaluation": "avg accuracy of parameters",
+        "label": "action"
+    }
+]

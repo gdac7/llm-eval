@@ -53,6 +53,7 @@ def calculateMetrics(pred_label, test_label, target_label):
     Calcula métricas precisao, revocação, f1 e acurácia para o label 'category' ou 'action'
     """
     unique_labels = set(pred_label).union(set(test_label))
+    unique_labels.discard("")
     results = []
     for label in unique_labels:
         # Condições para cada métrica
@@ -85,6 +86,7 @@ def media_por_label(teste, output, target_label):
     Porém mais flexível, podendo ser usada para calcular o quanto que, para cada action ou category, o LLM acerta os outros paramêtros
     """
     unique_labels = set(output[target_label]).union(set(teste[target_label]))
+    unique_labels.discard("")
     media = {label: 0 for label in unique_labels}
     media['evaluation'] = "avg accuracy of parameters"
     media['label'] = target_label
@@ -96,7 +98,7 @@ def media_por_label(teste, output, target_label):
         for (_, row_test), (_, row_out) in zip(linhas_label_teste.iterrows(), linhas_label_output.iterrows()):
             acertos = sum(val_test == val_out for val_test, val_out in zip(row_test.values, row_out.values))/total_labels
             media[label] += acertos
-        media[label] = round(media[label] / len(linhas_label_output), 4)
+        media[label] = round(media[label] / len(linhas_label_output) if len(linhas_label_output) > 0 else 0, 4)
     media['label'] = target_label
     return [media]
 
@@ -106,9 +108,9 @@ def evaluation_llms(test_file_path, test_size, model_name, current_model):
     save_test_shuffled(test_set.head(test_size))
     output_set = newReq(test_set.head(test_size), current_model)
     
-    metrics_categoria = calculateMetrics(output_set['category'], test_set['category'], 'category')
+    metrics_categoria = calculateMetrics(output_set['category'].head(test_size), test_set['category'].head(test_size), 'category')
     media_acertos_categoria = media_por_label(test_set.head(test_size), output_set.head(test_size), 'category')
-    metrics_action = calculateMetrics(output_set['action'], test_set['action'], 'action')
+    metrics_action = calculateMetrics(output_set['action'].head(test_size), test_set['action'].head(test_size), 'action')
     media_acertos_action = media_por_label(test_set.head(test_size), output_set.head(test_size), 'action')
     # Junta as metricas com a media de acerto e salva
     results = [{'intents': test_size}] + metrics_categoria + media_acertos_categoria + metrics_action + media_acertos_action

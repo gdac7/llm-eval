@@ -41,11 +41,8 @@ def calcularResultados(tp, fp, fn, tn):
     precision = round(tp / (tp + fp) if (tp + fp) > 0 else 0, 4)
     recall = round(tp / (tp + fn) if (tp + fn) > 0 else 0, 4)
     f1 = round(2 * (precision * recall) / (precision + recall) if (precision + recall) > 0 else 0, 4)
-    # acuracia para essa classe em questão. Total de acertos / total de exemplos
-    # Se ele preveu que não era e realmente não era, também é acerto!
-    accuracy = round((tp + fn) / (tp + fp + fn + tn) if (tp + fp + fn + tn) > 0 else 0, 4)
-
-    return precision, recall, f1, accuracy
+    
+    return precision, recall, f1
 
 
 def calculateMetrics(pred_label, test_label, target_label):
@@ -66,13 +63,12 @@ def calculateMetrics(pred_label, test_label, target_label):
         # True Negatives: não previu a categoria e de fato não era
         tn = float(((pred_label != label) & (test_label != label)).sum())
 
-        precision, recall, f1, accuracy = calcularResultados(tp, fp, fn, tn)
+        precision, recall, f1 = calcularResultados(tp, fp, fn, tn)
         new_json = {
             target_label: label,
             'precision': precision,
             'recall': recall,
             'f1-score': f1,
-            'accuracy': accuracy,
         }
         results.append(new_json)
     return results

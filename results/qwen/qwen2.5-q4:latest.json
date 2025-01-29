@@ -1,0 +1,90 @@
+[
+    {
+        "intents": 500
+    },
+    {
+        "category": "regulate",
+        "precision": 1.0,
+        "recall": 0.9357,
+        "f1-score": 0.9668
+    },
+    {
+        "category": "transfer",
+        "precision": 0.7636,
+        "recall": 1.0,
+        "f1-score": 0.866
+    },
+    {
+        "category": "construct",
+        "precision": 0.9479,
+        "recall": 0.728,
+        "f1-score": 0.8235
+    },
+    {
+        "regulate": 0.8069,
+        "transfer": 0.8556,
+        "construct": 0.9427,
+        "evaluation": "avg accuracy of parameters",
+        "label": "category"
+    },
+    {
+        "action": "prioritize",
+        "precision": 1.0,
+        "recall": 0.9355,
+        "f1-score": 0.9667
+    },
+    {
+        "action": "push",
+        "precision": 0.6562,
+        "recall": 1.0,
+        "f1-score": 0.7924
+    },
+    {
+        "action": "advertise",
+        "precision": 0.9697,
+        "recall": 0.5161,
+        "f1-score": 0.6737
+    },
+    {
+        "action": "pull",
+        "precision": 0.9524,
+        "recall": 0.9524,
+        "f1-score": 0.9524
+    },
+    {
+        "action": "monitor",
+        "precision": 1.0,
+        "recall": 0.2222,
+        "f1-score": 0.3636
+    },
+    {
+        "action": "block",
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0
+    },
+    {
+        "action": "discover",
+        "precision": 0.9692,
+        "recall": 1.0,
+        "f1-score": 0.9844
+    },
+    {
+        "action": "limit",
+        "precision": 0.6263,
+        "recall": 1.0,
+        "f1-score": 0.7702
+    },
+    {
+        "prioritize": 0.7644,
+        "push": 0.8455,
+        "advertise": 0.9293,
+        "pull": 0.8836,
+        "monitor": 0.869,
+        "block": 0.9355,
+        "discover": 0.9436,
+        "limit": 0.7374,
+        "evaluation": "avg accuracy of parameters",
+        "label": "action"
+    }
+]

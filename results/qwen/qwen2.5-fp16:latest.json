@@ -1,0 +1,97 @@
+[
+    {
+        "intents": 500
+    },
+    {
+        "category": "transfer",
+        "precision": 0.7911,
+        "recall": 0.9921,
+        "f1-score": 0.8803
+    },
+    {
+        "category": "construct",
+        "precision": 0.7833,
+        "recall": 0.752,
+        "f1-score": 0.7673
+    },
+    {
+        "category": "regulate",
+        "precision": 1.0,
+        "recall": 0.8916,
+        "f1-score": 0.9427
+    },
+    {
+        "transfer": 0.8608,
+        "construct": 0.8819,
+        "regulate": 0.8401,
+        "evaluation": "avg accuracy of parameters",
+        "label": "category"
+    },
+    {
+        "action": "limit",
+        "precision": 0.6739,
+        "recall": 1.0,
+        "f1-score": 0.8052
+    },
+    {
+        "action": "prioritize",
+        "precision": 1.0,
+        "recall": 0.9677,
+        "f1-score": 0.9836
+    },
+    {
+        "action": "block",
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0
+    },
+    {
+        "action": "pull",
+        "precision": 1.0,
+        "recall": 0.9206,
+        "f1-score": 0.9587
+    },
+    {
+        "action": "track",
+        "precision": 0.0,
+        "recall": 0,
+        "f1-score": 0
+    },
+    {
+        "action": "advertise",
+        "precision": 0.9697,
+        "recall": 0.5161,
+        "f1-score": 0.6737
+    },
+    {
+        "action": "discover",
+        "precision": 0.7412,
+        "recall": 1.0,
+        "f1-score": 0.8514
+    },
+    {
+        "action": "monitor",
+        "precision": 1.0,
+        "recall": 0.1587,
+        "f1-score": 0.2739
+    },
+    {
+        "action": "push",
+        "precision": 0.6429,
+        "recall": 1.0,
+        "f1-score": 0.7826
+    },
+    {
+        "limit": 0.7591,
+        "prioritize": 0.8389,
+        "block": 0.9516,
+        "pull": 0.8966,
+        "track": 0.8333,
+        "advertise": 0.9596,
+        "discover": 0.8549,
+        "monitor": 0.8667,
+        "push": 0.8418,
+        "evaluation": "avg accuracy of parameters",
+        "label": "action"
+    }
+]

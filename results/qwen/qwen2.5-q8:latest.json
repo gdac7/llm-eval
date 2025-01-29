@@ -1,0 +1,97 @@
+[
+    {
+        "intents": 500
+    },
+    {
+        "category": "regulate",
+        "precision": 1.0,
+        "recall": 0.8956,
+        "f1-score": 0.9449
+    },
+    {
+        "category": "construct",
+        "precision": 0.7769,
+        "recall": 0.752,
+        "f1-score": 0.7642
+    },
+    {
+        "category": "transfer",
+        "precision": 0.7949,
+        "recall": 0.9841,
+        "f1-score": 0.8794
+    },
+    {
+        "regulate": 0.849,
+        "construct": 0.8829,
+        "transfer": 0.8611,
+        "evaluation": "avg accuracy of parameters",
+        "label": "category"
+    },
+    {
+        "action": "monitor",
+        "precision": 1.0,
+        "recall": 0.2222,
+        "f1-score": 0.3636
+    },
+    {
+        "action": "pull",
+        "precision": 1.0,
+        "recall": 0.873,
+        "f1-score": 0.9322
+    },
+    {
+        "action": "push",
+        "precision": 0.6364,
+        "recall": 1.0,
+        "f1-score": 0.7778
+    },
+    {
+        "action": "advertise",
+        "precision": 0.8889,
+        "recall": 0.5161,
+        "f1-score": 0.653
+    },
+    {
+        "action": "discover",
+        "precision": 0.7875,
+        "recall": 1.0,
+        "f1-score": 0.8811
+    },
+    {
+        "action": "limit",
+        "precision": 0.7045,
+        "recall": 1.0,
+        "f1-score": 0.8266
+    },
+    {
+        "action": "block",
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0
+    },
+    {
+        "action": "prioritize",
+        "precision": 1.0,
+        "recall": 0.9677,
+        "f1-score": 0.9836
+    },
+    {
+        "action": "track",
+        "precision": 0.0,
+        "recall": 0,
+        "f1-score": 0
+    },
+    {
+        "monitor": 0.8452,
+        "pull": 0.8909,
+        "push": 0.8468,
+        "advertise": 0.9213,
+        "discover": 0.875,
+        "limit": 0.7689,
+        "block": 0.957,
+        "prioritize": 0.8556,
+        "track": 0.7,
+        "evaluation": "avg accuracy of parameters",
+        "label": "action"
+    }
+]

@@ -1,0 +1,111 @@
+[
+    {
+        "intents": 500
+    },
+    {
+        "category": "regulate",
+        "precision": 1.0,
+        "recall": 0.9438,
+        "f1-score": 0.9711
+    },
+    {
+        "category": "error",
+        "precision": 0.0,
+        "recall": 0,
+        "f1-score": 0
+    },
+    {
+        "category": "transfer",
+        "precision": 0.7091,
+        "recall": 0.9286,
+        "f1-score": 0.8041
+    },
+    {
+        "category": "construct",
+        "precision": 0.8061,
+        "recall": 0.632,
+        "f1-score": 0.7085
+    },
+    {
+        "regulate": 0.7766,
+        "error": 0.0,
+        "transfer": 0.7646,
+        "construct": 0.8163,
+        "evaluation": "avg accuracy of parameters",
+        "label": "category"
+    },
+    {
+        "action": "prioritize",
+        "precision": 0.9683,
+        "recall": 0.9839,
+        "f1-score": 0.976
+    },
+    {
+        "action": "advertise",
+        "precision": 0.9545,
+        "recall": 0.6774,
+        "f1-score": 0.7924
+    },
+    {
+        "action": "pull",
+        "precision": 0.8679,
+        "recall": 0.7302,
+        "f1-score": 0.7931
+    },
+    {
+        "action": "monitor",
+        "precision": 1.0,
+        "recall": 0.2222,
+        "f1-score": 0.3636
+    },
+    {
+        "action": "block",
+        "precision": 0.9841,
+        "recall": 1.0,
+        "f1-score": 0.992
+    },
+    {
+        "action": "request",
+        "precision": 0.0,
+        "recall": 0,
+        "f1-score": 0
+    },
+    {
+        "action": "push",
+        "precision": 0.7875,
+        "recall": 1.0,
+        "f1-score": 0.8811
+    },
+    {
+        "action": "track",
+        "precision": 0.0,
+        "recall": 0,
+        "f1-score": 0
+    },
+    {
+        "action": "discover",
+        "precision": 0.6774,
+        "recall": 1.0,
+        "f1-score": 0.8077
+    },
+    {
+        "action": "limit",
+        "precision": 0.8714,
+        "recall": 0.9839,
+        "f1-score": 0.9242
+    },
+    {
+        "prioritize": 0.8122,
+        "advertise": 0.7538,
+        "pull": 0.7736,
+        "monitor": 0.869,
+        "block": 0.8386,
+        "request": 0.3333,
+        "push": 0.8063,
+        "track": 0.6111,
+        "discover": 0.776,
+        "limit": 0.731,
+        "evaluation": "avg accuracy of parameters",
+        "label": "action"
+    }
+]

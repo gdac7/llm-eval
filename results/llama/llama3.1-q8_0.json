@@ -1,0 +1,104 @@
+[
+    {
+        "intents": 500
+    },
+    {
+        "category": "construct",
+        "precision": 0.5714,
+        "recall": 0.64,
+        "f1-score": 0.6038
+    },
+    {
+        "category": "regulate",
+        "precision": 1.0,
+        "recall": 0.8072,
+        "f1-score": 0.8933
+    },
+    {
+        "category": "transfer",
+        "precision": 0.7055,
+        "recall": 0.8175,
+        "f1-score": 0.7574
+    },
+    {
+        "category": "error",
+        "precision": 0.0,
+        "recall": 0,
+        "f1-score": 0
+    },
+    {
+        "construct": 0.6893,
+        "regulate": 0.8375,
+        "transfer": 0.7546,
+        "error": 0.1667,
+        "evaluation": "avg accuracy of parameters",
+        "label": "category"
+    },
+    {
+        "action": "limit",
+        "precision": 0.9242,
+        "recall": 0.9839,
+        "f1-score": 0.9531
+    },
+    {
+        "action": "track",
+        "precision": 0.0,
+        "recall": 0,
+        "f1-score": 0
+    },
+    {
+        "action": "prioritize",
+        "precision": 0.9831,
+        "recall": 0.9355,
+        "f1-score": 0.9587
+    },
+    {
+        "action": "pull",
+        "precision": 1.0,
+        "recall": 0.6032,
+        "f1-score": 0.7525
+    },
+    {
+        "action": "block",
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0
+    },
+    {
+        "action": "discover",
+        "precision": 0.5351,
+        "recall": 0.9683,
+        "f1-score": 0.6893
+    },
+    {
+        "action": "push",
+        "precision": 0.6429,
+        "recall": 1.0,
+        "f1-score": 0.7826
+    },
+    {
+        "action": "monitor",
+        "precision": 1.0,
+        "recall": 0.1746,
+        "f1-score": 0.2973
+    },
+    {
+        "action": "advertise",
+        "precision": 0.9167,
+        "recall": 0.5323,
+        "f1-score": 0.6735
+    },
+    {
+        "limit": 0.7576,
+        "track": 0.6667,
+        "prioritize": 0.8531,
+        "pull": 0.7851,
+        "block": 0.9032,
+        "discover": 0.6637,
+        "push": 0.7449,
+        "monitor": 0.9091,
+        "advertise": 0.7917,
+        "evaluation": "avg accuracy of parameters",
+        "label": "action"
+    }
+]
